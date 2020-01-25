@@ -1,0 +1,22 @@
+div {
+    border: solid 1px black;
+    /* padding-top, right, bottom, left */
+    padding: 10px 1px 10px 10px;
+    margin: 10px; /* 상하좌우 다 10px이란 뜻 */
+}
+
+div.a {
+    /* 위의 border 및 all 상속 + overriding */
+    border: dashed 3px red;
+    padding: 20px;
+    /* 상하, 좌우 */
+    margin: 50px 30px;   
+}
+
+.like-p {
+    /* 위의 보더 각각 */
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rebeccapurple;
+    margin: 1em 0;
+}

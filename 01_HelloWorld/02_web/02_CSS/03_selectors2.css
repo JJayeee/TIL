@@ -1,0 +1,77 @@
+body {
+    color: darkcyan;
+}
+
+article:first-of-type {
+    background-color: red;
+}
+
+article:nth-of-type(2) {
+    background-color: green;
+}
+
+/* 뒤에서 두 번째 */
+article:nth-last-of-type(2) {
+    background-color: blue;
+}
+
+article:last-of-type {
+    background-color: black;
+}
+
+p:last-of-type {
+    background-color: aqua;
+}
+
+p:first-of-type {
+    background-color: yellow;
+}
+
+/* 요소 중에 첫째인 p를 선택, p의 첫째 아님. 소속을 봐야 함! */
+/* 첫쨰인데 까고보니 p */
+p:first-child {
+    color: gold;
+}
+
+/* p 요소중에 마지막 자식을 선택 -> 셋째는 body에서 마지막이 아니라서 */
+p:last-child {
+    color: violet;
+}
+
+/* 부모가 누구든, 아무튼 넷째인데 nth-child(4)가 p 라면 */
+
+
+p:nth-child(4) {
+    color: white;
+}
+
+
+/* pseudo class selector */
+/* 상태에 따라 클래스를 바꾼다. */
+/* selector:가상-클래스 */
+
+a { 
+    text-decoration: none; /* None 아님 */
+    color: black;
+}
+
+/* 방문 하지 않은 링크 */
+a:link {
+    color: red;
+}
+
+/* 마우스 올라갔을 때 / 작동여부 순서 있음(CSS) */
+a:hover {
+    color: orange;
+}
+
+/* 방문 한 링크 */
+a:visited {
+    color: navajowhite;
+}
+
+/* 클릭시 */
+input:focus {
+    background-color: black;
+    color: white;
+}

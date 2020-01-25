@@ -1,0 +1,94 @@
+
+/* 
+    position 의 default
+    위 => 아래, 왼 => 오
+    부모요소 <=> 자식요소일 때, 부모의 위치가 기준점이 됨
+    좌표값을 줘도 안 먹음.
+*/
+
+.parent {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* width height는 상속되지 않음, 다만 제한이 된 것! */
+/* 그냥 color는 content의 색깔 */
+.static-box {
+    position: static;
+    /* position 기본값, 자식요소로 존재할때는 부모위치 기준 배치 */
+    /* 이미 설정된 position  무력화 하기 위해 사용 */
+    background: rgb(131, 43, 33);
+    color: wheat;
+    text-align: center;
+    /* !!!width, height는 상속되지 않는다.!!!!!!!  */
+    /* 이때 static.box의 width는 parent의 100% */
+    /* line-height: 130px; */
+    /* 안 하면 content만큼만 높이 (auto) */
+}
+
+/* 부모를 기준으로!! 상대적으로 움직임 */
+/* 여기도 width height는 상속되지 않음 */
+.relative-box {
+    position: relative;
+    /* static 기준 위치로부터 좌표 프로퍼티를 사용 */
+    /* top, bottom, left, right */
+    /* 좌표 프로퍼티의 동작 여부만 차이가 남 */
+    top: 50px; left: 50px;
+    background: skyblue;
+    text-align: center;
+    height: 150px;
+}
+
+
+/* 부모영향받긴하지만 쓰지 말긩 쓰면 망하는 지름길 - 
+   부모(조상)가 static이면 body기준으로 움직임 
+   부모가 relative 면, 부모 기준으로 움직임. */
+/* 다른 요소가 먼저 위치를 점유하고 있어도 
+    뒤로 밀리지 않고 덮어쓰게 된다. */
+.absolute-box {
+    position: absolute;
+    height: 200px; width: 200px;
+    top: 50px; left: 50px;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+
+.rel {
+    position: relative;
+}
+
+/* div 이긴 한데 fixed의 특성 - greedy 하지 않음 : width 지정 해줘야 하는 것*/
+/* 스크롤 여부와 상관없다가 fixed의 속성 */
+/* fixed */
+/* 부모요소와 관계없이 viewport 기준으로 좌표 프로퍼티를 이용하여 위치 이동 */
+.fixed-box {
+    position: fixed;
+    color: darkgray;
+    text-align: center;
+    background: black;
+}
+
+.sidebar {
+    top: 0;
+    right: 0;
+    width: 15vw; /* 보고있는 창 전체 100vw  */
+    /* 절반을 위아래로 주었기 때문에 꽉 차 있는 것! */
+    padding: 50% 10px; 
+    height: 100vh;
+    /* z index : 앞뒤 개념 3차원 z축, 기본은 0 (등장순서에 따라서) */
+    /* static 요소만 적용 된다 */
+    z-index: 1;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%; /* 100vw */
+    background-color: aqua;
+    height: 8vw;
+}
+

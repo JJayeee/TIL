@@ -1,0 +1,29 @@
+{% extends 'board/base.html' %}
+{% block title %}Board Main{% endblock %}
+
+{% block body %}
+
+
+<div class="jumbotron jumbotron-fluid bg-test1 text-white">
+  <div class="container">
+    <h1 class="display-4">Board index</h1>
+    <p class="lead">Django를 활용하여 게시판 만들기~</p>
+  </div>
+</div>
+
+<div>
+    <a href="/board/articles/new" class="badge badge-info bg-test3" target="_blank">새 글 쓰기</a>
+</div>
+
+<div>
+    <ol>
+        {% for article in  articles %}
+            <li>
+                {% comment %} TODO: href {% endcomment %}
+                <a href="/board/articles/{{ article.id }}" class="badge badge-light" target="_blank">{{ article.title }}</a>
+            </li>        
+        {% endfor %}
+    </ol>
+</div>
+
+{% endblock %}

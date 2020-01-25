@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 보여짐의 영역*/
+    body {
+      background-color: black;
+      color: white;
+      width: 960px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Data 및 내용 -->
+
+  <h1>Hi</h1>
+  <p>0</p>
+  <button onclick="plus()">+</button>
+  <button onclick="minus()">-</button>
+  <!-- consol에서 사진 001과 같이 하던 것을 onclick을 넣어서
+        새로고침을 하지 않아도 되도록 만들어 진다. -->
+
+  <script>
+    // 프로그래밍의 영역
+
+    // One line comment
+    /*
+        Multi line comment
+    */
+
+    // art+b : browser open
+
+    /* consol 에서 window.alert('blah') 였는데 window 안 해도 됨 => window가 최상단이라서 생략함
+        window --   : DOM Tree
+                L
+                L document - HTML - head
+                                  L body
+
+    */
+    alert('Welcome to JS');
+
+    // document.querySelector('h1')
+    //     // <h1>​Hi​</h1>​
+    // document.querySelector('h1').innerText
+    //     // "Hi"
+
+    buttons = document.querySelectorAll('button');
+    plusButton = buttons[0];
+    minusButton = buttons[1];
+
+    function plus() {
+      number = document.querySelector('p').innerText;
+      number = parseInt(number) + 1;
+      document.querySelector('p').innerText = number;
+      console.log('1을 더한 결과 ' + (number) + '가 되었습니다.')
+    }
+
+    function minus() {
+      number = document.querySelector('p').innerText;
+      number = parseInt(number) - 1
+      document.querySelector('p').innerText = number;
+      console.log(`1을 뺀 결과 ${number}가 되었습니다.`);
+    }
+  </script>
+</body>
+
+</html>

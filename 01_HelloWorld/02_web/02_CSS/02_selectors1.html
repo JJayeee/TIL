@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>selector 1</title>
+    <style>
+        h1, p, a {
+            color: rebeccapurple;
+        }
+
+        .pp {
+            color: orange;
+        }
+
+        /* 어트리뷰트 셀렉터 */
+        a[href] {
+            color: green;
+        }
+
+        /* 지정된 어트리뷰트와 값이 일치하는 모든 요소 */
+        a[target="_blank"] {
+            color: blue;
+        }
+
+        /* 지정된 값을 단어로 포함하는, 복수 중 하나라도 값을 갖고 있는 */
+        h2[title~="greeting"] {
+            color: red;
+        }
+        
+        /* 모든 div 안에 있는 p (후손요소) all (, 와 다름!) */
+        div p { 
+            color: darkcyan;
+        }
+
+        /* 정확하게 div 바로 밑의 p (자식요소) */
+        div > p {
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>나는 div 자식</p>
+        <section>
+            <p>
+                나는 div 후손
+            </p>
+        </section>
+    </div>
+
+    <p>나는 아님</p>
+
+    <h1>Hello</h1>
+    <p>Happy Hacking</p>
+    <p class="pp">SSAFY 2nd</p>
+
+    <a href="#">a</a>
+    <a href="#" target="_self">b</a>
+    <a href="#" target="_blank">c</a>
+    <a>d</a>
+    
+    <h2 title="p greeting">hi</h2>
+    <h2 title="p goodbye">bye</h2>
+    <h2 title="hello greeting">WOW</h2>
+</body>
+
+</html>

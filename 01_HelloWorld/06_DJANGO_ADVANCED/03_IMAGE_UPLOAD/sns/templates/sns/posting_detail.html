@@ -1,0 +1,76 @@
+{% extends 'sns/base.html' %}
+
+{% block title %}{% endblock  %}
+
+{% block detail %}active{% endblock %}
+
+{% block body %}
+    <div class="row mt-3"> <!-- 한 줄에 -->
+
+        <div class="col-12 col-md-6">  <!-- 절반에 카드 하나 -->
+            <div class="card">
+                {% if posting.image %}
+                    {% comment %} {{ posting.image }} {% endcomment %}
+                    {% comment %} 이러면 그 col에 있는 -> str이 출력 {% endcomment %}
+                    {% comment %} {{ posting.image.url }} {% endcomment %}
+                    <img src="{{ posting.image.url }}" alt="{{ posting.image }}" class="card-img-top image-fluid">
+                    {% comment %} 사용자가 업로드한 사진이라 alt를 입력할 수 없어서 {% endcomment %}
+                {% else %}
+                    <img src="https://picsum.photos/200/250" alt="random image"  class="card-img-top image-fluid">
+                {% endif %}
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="{{ posting.icon }} fa-1x"></i>
+                        </div>
+
+                        <div class="col-7">
+                            <small>{{ posting.like_users.count }} 명이 좋아합니다.</small>
+                        </div>
+
+                        <div class="col-2">
+                            <form action="{% url 'sns:like' posting.id %}" method="POST">
+                                {% csrf_token %}
+
+                                <button>
+                                    {% if is_like %}
+                                    Dislike
+                                    {% else %}
+                                    Like
+                                    {% endif %}
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <!-- 원래 i tag는 italic 이었는데 의미론 X -> 사장되어가는걸 font awesome이 활용 --> 
+                    <!-- class를 활용하여, font awesome 의 fa /  fa-3x 사이즈 -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-10">
+                            <!-- {{ posting.user.username }} 아래와 동일 -->
+                            <p class="card-text"><strong>{{ posting.user }}</strong></p>
+                            <p class="card-text">{{ posting.content }}</p>
+                        </div>
+                        <div class="col-2">
+                        {% if user == posting.user %}  <!-- 1 step ui로 막기 -->
+                            <form action="{% url 'sns:delete_posting' posting.id %}" method="POST">
+                                {% csrf_token %}
+                                <button><i class="fas fa-trash"></i></button>
+                            </form>
+                        {% endif %}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        {% include 'sns/_comment.html' %}
+
+    </div>
+{% endblock  %}

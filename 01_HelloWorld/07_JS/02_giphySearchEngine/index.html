@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Giphy Search Engine</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container container-padding50">
+        <!-- form tag: 우리가 서버를 가지고 있을 때나 쓰는 것이지 필요 없음! -->
+        <!-- url을 보내고, 받고 -->
+
+        <input type="number" id="js-image-count" class="container-textinput" value="5" max="20" min="1">
+        <input type="text" id="js-userinput" class="container-textinput"/> 
+        <button id="js-go" class="container-button">Go!</button>
+        <div>
+            <button id="js-next-button">next</button>
+            <button id="js-prev-button">prev</button>
+        </div>
+    </div>
+    <div id="js-result-area" class="container container-padding50 js-container">
+​
+    </div>
+		
+		<!-- JS 파일은 HTML문서에 이렇게 import 한다 -->
+    <script src="./main.js"></script> 
+</body>
+</html>

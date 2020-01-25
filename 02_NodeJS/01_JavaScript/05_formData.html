@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h3>FormData</h3>
+  <p>HTML form 태그의 데이터를 동적으로 제어할 수 있는 기능. 주로 AJAX와 함께 사용 된 다.
+    formData.append('name', 'zerocho')
+    formData.append('item', 'orange')
+    formData.append('item', 'melon')
+    formData.has('item') // true
+    formData.has('money') // false
+    fromData.get('item') // orange
+    formData.getAll('item') // ['orange', 'melon']
+    formData.append('test', ['hi', 'zero'])
+    formData.get('test') // hi, zero
+    formData.delete('test')
+    formData.get('test') // null
+    formData.get('item', 'apple')
+    formData.getAll('item')  // ['apple']
+  </p>
+
+  <script>
+    var xhr = new XMLHttpRequest();
+    var formData = new FormData();
+    formData.append('name', 'zerocho');
+    formData.append('birth', 1994);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 200 || xhr.status === 201 ) {
+        console.log(xhr.responseText);
+      } else {
+        console.log(xhr.responseText);
+      }
+    };
+    xhr.open('POST', 'https://www.zerocho.com/api/post/formdata');
+    xhr.send(formData);
+
+  </script>
+
+</body>
+
+</html>

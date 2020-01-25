@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Article detail{% endblock  %}
+
+{% block body %}
+    <h1>{{ article.title }}</h1>
+    <div>
+        <small>created: {{ article.created_at }}</small>
+        <small>updated: {{ article.updated_at }}</small>    
+    </div>
+
+    <p>
+        {{ article.content }}
+    </p>
+
+    <div>
+        <a href="{% url 'board:article_list' %}">
+            <button>목록</button>
+        </a>
+    </div>
+    <div>
+        <a href="{% url 'board:edit_article' article.id %}">
+            <button>수정</button>
+        </a>
+    </div>
+    <div>
+        <form action="{% url 'board:delete_article' article.id %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="삭제" onclick="return confirm('삭제 하시겠습니까?')">
+                {% comment %} <input id='delButton' type="submit" value="삭제"> {% endcomment %}
+        </form>
+    </div>
+    
+    {% include 'board/_comment.html' %}
+    {% comment %} 의미론 적으로 파일명과 comment CRUD가 맞지 않기 때문에 분리 {% endcomment %}
+
+{% endblock  %}

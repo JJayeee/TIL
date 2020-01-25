@@ -1,0 +1,10 @@
+{% extends 'utils/base.html' %}
+{% block title %}Throw{% endblock %}
+{% block body %}
+<br>
+<br>
+<h1>{{ country }}로 번역한 결과</h1>
+<div class="alert alert-info" role="alert">
+    '{{ words }}' => '{{ result }}'
+</div>
+{% endblock %}

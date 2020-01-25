@@ -1,0 +1,50 @@
+django-admin startproject django_recap . 
+    -> . : 이 폴더에
+
+
+1. django_recap
+2. home
+3-1. board -> models / migrations 
+    # $ pip install django-extensions  -> settings.py, app 등록
+    # $ pip install ipython
+    # $ python manage.py shell_plus  (ctrl + d + y)
+    
+    # $ python manage.py shell_plus --print-sql
+
+3-2. 게시판 7 views
+    1) new (새 글 작성)
+    2) create (save to DB)
+    3) detail (작성한 글 확인: 사용자가 받아 볼 화면 return)
+    4) edit (수정 버튼 / 수정 창)
+    5) update
+    6) delete
+    7) index, 게시 글 모여있는 화면
+
+4-1. my_recap
+4-2. django_recap
+    python manage.py migrate
+    python manage.py createsuperuser
+    admin.py
+
+    forms.py
+    -> model과 form은 한 set
+
+5. refactor views
+
+6. 1:N
+    models -> def Comment
+
+7. def new_comment rere
+
+
+# DebuggingQuest django_recap
+1. base.html에 대해 (모든 앱에서 쓰이는 template에 대해)
+-> 프로젝트 전체에서 공통으로 쓸 HTML 을 어디에 두고, 어떻게 찾을 것인가.
+    settings.py -> 57줄, TEMPLATES[DIRS]
+    새폴더(최상단): mkdir templates -> touch base.html
+    => installed apps 안에 속한 것이 아니므로 못 찾는다. then?
+    => BASE_DIR 가 언제나 프로젝트 폴더의 절대 경로 absolute path
+    => 비어있던(어떤 default 값이었던) []를 수정해줌 ([]에 추가하는 것임)
+
+
+2. TIME_ZONE

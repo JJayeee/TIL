@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Calc</h1>
+  <p>0</p>
+  <button onclick="plus()">
+    +
+  </button>
+  <button onclick="minus()">
+    -
+  </button>
+
+  <script>
+    alert('더하기 빼기 계산')
+
+    function plus() {
+      number = document.querySelector('p').innerText;
+      number = parseInt(number) + 1;
+      document.querySelector('p').innerText = number;
+    };
+
+    function minus() {
+      number = document.querySelector('p').innerText;
+      number = parseInt(number) - 1;
+      document.querySelector('p').innerText = number
+    }
+  
+  
+  </script>
+
+
+</body>
+
+</html>

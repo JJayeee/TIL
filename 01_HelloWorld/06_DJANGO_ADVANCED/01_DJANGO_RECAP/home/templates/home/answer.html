@@ -1,0 +1,14 @@
+{% extends 'home/base.html' %}
+{% block title %}
+    Answer
+{% endblock %}
+
+{% block body %}
+    <h1>Answer</h1>
+    <p>{{ cnt }} 개 맞았습니다.</p>
+    {% if cnt > 1 %}
+        <p>{{ name }}(이)는 대단하구나.</p>
+    {% else %}
+        <p>{{ name }}...</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% comment %} <form method="POST">
+    {% csrf_token %}
+    <div>
+        <label for="title">제목:</label>
+        <input type="text" name="title" id="title" value={{ article.title }}>
+    </div>
+    <div>
+        <label for="content">내용:</label>
+        <textarea name="content" id="content" cols="30" rows="10">{{ article.content }}</textarea>
+    </div>
+    <div>
+        <input type="submit" value="수정!">
+    </div>
+</form> {% endcomment %}
+{% comment %} new의 경우에 {{article.}} 가 없더라도, value값이 없으면 그냥 없는대로 적용 됨 {% endcomment %}
+<form method="POST">
+    {% csrf_token %}
+    {% comment %} {{ form }} {% endcomment %}
+    {{ form.as_p }}
+    <input type="submit">
+</form>

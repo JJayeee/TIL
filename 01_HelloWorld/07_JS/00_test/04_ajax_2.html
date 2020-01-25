@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id='js-data-load-btn'>XHR</button>
+    <button id='js-data-fetch-btn'>Fetch</button>
+    <button id='js-data-axios-btn'>Axios</button>
+
+    <div id="js-content-area">
+
+    </div>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const URL = 'https://koreanjson.com';
+        const btn1 = document.querySelector('#js-data-load-btn');
+        const btn2 = document.querySelector('#js-data-fetch-btn');
+        const btn3 = document.querySelector('#js-data-axios-btn');
+        const area = document.querySelector('#js-content-area')
+
+        let postId = 1;
+        btn1.addEventListener('click', () => {
+            const AJAX = new XMLHttpRequest();
+            AJAX.open('GET', `${URL}/posts/${postId++}`);
+            AJAX.send();
+            AJAX.addEventListener('load', (e) => {
+                console.log(e); // ProgressEvent 
+                console.log(e.target); // XMLHttpRequest
+                const data = JSON.parse(e.target.response);
+                console.log(data); // object
+                area.innerHTML = `<p>${data.title}</p>`
+            })
+        });
+
+        btn2.addEventListener('click', () => {
+            fetch(`${URL}/posts/${postId++}`)
+                .then(res => res.json())
+                .then(data => {
+                    area.innerHTML += `<p>${data.title}</p>`;
+                })
+                .catch(err => console.error(`111${err}`));
+        });
+
+        btn3.addEventListener('click', () => {
+            axios.get(`${URL}/posts/${postId++}`)
+                // .then(res => {
+                //     area.innerHTML += `<p>${res.data.title}</p>`;
+                // })
+                .then(res => {
+                    console.log(res);
+                    return res.data
+                })
+                .then(data => { // res.data의 이름을 data로 지정해 준 것
+                    area.innerHTML += `<p>${data.title}</p>`
+                })
+                .catch(err => console.error(err));
+        })
+
+    
+    </script>
+    
+</body>
+</html>

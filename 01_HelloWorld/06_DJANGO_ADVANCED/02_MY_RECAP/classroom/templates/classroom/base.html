@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light text-light" style="background-color: #732C26;">
+            <span class="navbar-brand text-light mb-0 h1">2SS3</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-light" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="{% url 'classroom:List' %}">목록으로<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{% url 'classroom:new' %}">정보입력</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="https://app.slack.com/client/TL9N5GGLF/CKWED8XAN">Slack</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block body %}
+        {% endblock  %}
+    </div>
+</body>
+</html>
+
+{% comment %} 
+/* Color Theme Swatches in Hex */
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-1-hex { color: #A68F4B; }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-2-hex { color: #F2935C; }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-3-hex { color: #D96941; }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-4-hex { color: #A64029; }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-5-hex { color: #732C26; }
+
+/* Color Theme Swatches in RGBA */
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-1-rgba { color: rgba(165, 142, 74, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-2-rgba { color: rgba(242, 147, 92, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-3-rgba { color: rgba(216, 105, 65, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-4-rgba { color: rgba(165, 64, 41, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-5-rgba { color: rgba(114, 44, 37, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-1-hsla { color: hsla(45, 37, 47, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-2-hsla { color: hsla(22, 85, 65, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-3-hsla { color: hsla(16, 66, 55, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-4-hsla { color: hsla(11, 60, 40, 1); }
+.Winding-road-in-the-forest-in-the-fall-with-truck-on-the-road-5-hsla { color: hsla(5, 50, 29, 1); } {% endcomment %}

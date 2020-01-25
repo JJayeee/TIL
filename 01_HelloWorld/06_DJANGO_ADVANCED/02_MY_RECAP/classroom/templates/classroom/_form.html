@@ -1,0 +1,27 @@
+<form method="POST">
+    {% csrf_token %}
+    <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text text-light" id="inputGroup-sizing-sm" style="background-color: #F2935C;">이름</span>
+    </div>
+    <input id='name' name='name' type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value={{ student.name }}>
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text text-light" id="inputGroup-sizing-sm" style="background-color: #F2935C;">나이</span>
+    </div>
+    <input id='age' name='age' type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value={{ student.age }}>
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text text-light" id="inputGroup-sizing-sm" style="background-color: #F2935C;">전공</span>
+    </div>
+    <input name='major' id='major' type='text' class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value={{ student.major }}>
+    </div>
+
+    <div>
+    <input style="background-color: #A64029;" class="btn text-light" type="submit" value="제출하기">
+    </div>
+</form>

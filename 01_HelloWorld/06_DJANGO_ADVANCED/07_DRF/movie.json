@@ -1,0 +1,832 @@
+[
+	{
+		"model": "movies.movie",
+		"pk": 167651,
+		"fields": {
+			"movieName": "극한직업",
+			"movieNameEn": "Extreme Job",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-01-23",
+			"runningTime": "111분",
+			"director": "이병헌",
+			"summary": "낮에는 치킨장사! 밤에는 잠복근무!\n지금까지 이런 수사는 없었다!불철주야 달리고 구르지만 실적은 바닥, 급기야 해체 위기를 맞는 마약반! 더 이상 물러설 곳이 없는 팀의 맏형 고반장은 국제 범죄조직의 국내 마약 밀반입 정황을 포착하고 장형사, 마형사, 영호, 재훈까지 4명의 팀원들과 함께 잠복 수사에 나선다. 마약반은 24시간 감시를 위해 범죄조직의 아지트 앞 치킨집을 인수해 위장 창업을 하게 되고, 뜻밖의 절대미각을 지닌 마형사의 숨은 재능으로 치킨집은 일약 맛집으로 입소문이 나기 시작한다. 수사는 뒷전, 치킨장사로 눈코 뜰 새 없이 바빠진 마약반에게 어느 날 절호의 기회가 찾아오는데…  범인을 잡을 것인가, 닭을 잡을 것인가!",
+			"genre": [
+				11
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190116_206/1547615429111dINWj_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "류승룡|이하늬",
+			"bechdelRating": 0,
+			"naverRating": 9.2
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 136900,
+		"fields": {
+			"movieName": "어벤져스: 엔드게임",
+			"movieNameEn": "Avengers: Endgame",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-04-24",
+			"runningTime": "181분",
+			"director": "안소니 루소",
+			"summary": "인피니티 워 이후 절반만 살아남은 지구 마지막 희망이 된 어벤져스 먼저 떠난 그들을 위해 모든 것을 걸었다!  위대한 어벤져스 운명을 바꿀 최후의 전쟁이 펼쳐진다!",
+			"genre": [
+				19,
+				18
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190417_250/1555465284425i6WQE_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "로버트 다우니 주니어|크리스 에반스",
+			"bechdelRating": 3,
+			"naverRating": 9.5
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 163788,
+		"fields": {
+			"movieName": "알라딘",
+			"movieNameEn": "Aladdin",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-05-23",
+			"runningTime": "128분",
+			"director": "가이 리치",
+			"summary": "머나먼 사막 속 신비의 아그라바 왕국의 시대.\r 좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나섰다가\r 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고,\r 자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…",
+			"genre": [
+				6,
+				12
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190524_104/1558663170174Q2mmw_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "메나 마수드|윌 스미스",
+			"bechdelRating": 3,
+			"naverRating": 9.42
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 161967,
+		"fields": {
+			"movieName": "기생충",
+			"movieNameEn": "PARASITE",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-05-30",
+			"runningTime": "131분",
+			"director": "봉준호",
+			"summary": "“폐 끼치고 싶진 않았어요”전원백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족. 장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는 모처럼 싹튼 고정수입의 희망이다. 온 가족의 도움과 기대 속에 박사장(이선균) 집으로 향하는 기우. 글로벌 IT기업 CEO인 박사장의 저택에 도착하자 젊고 아름다운 사모님 연교(조여정)가 기우를 맞이한다.  그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니…",
+			"genre": [
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190528_36/1559024198386YVTEw_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "송강호|이선균",
+			"bechdelRating": 3,
+			"naverRating": 9.06
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 174903,
+		"fields": {
+			"movieName": "엑시트",
+			"movieNameEn": "EXIT",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-07-31",
+			"runningTime": "103분",
+			"director": "이상근",
+			"summary": "짠내 폭발 청년백수, 전대미문의 진짜 재난을 만나다!대학교 산악 동아리 에이스 출신이지만 졸업 후 몇 년째 취업 실패로 눈칫밥만 먹는 용남은 온 가족이 참석한 어머니의 칠순 잔치에서 연회장 직원으로 취업한 동아리 후배 의주를 만난다 어색한 재회도 잠시, 칠순 잔치가 무르익던 중 의문의 연기가 빌딩에서 피어 오르며 피할 새도 없이 순식간에 도심 전체는 유독가스로 뒤덮여 일대혼란에 휩싸이게 된다. 용남과 의주는 산악 동아리 시절 쌓아 뒀던 모든 체력과 스킬을 동원해 탈출을 향한 기지를 발휘하기 시작하는데…",
+			"genre": [
+				19,
+				11
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190724_161/1563931152464tk11A_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "조정석|윤아",
+			"bechdelRating": 0,
+			"naverRating": 9.0
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 173123,
+		"fields": {
+			"movieName": "스파이더맨: 파 프롬 홈",
+			"movieNameEn": "Spider-Man: Far From Home",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-07-02",
+			"runningTime": "129분",
+			"director": "존 왓츠",
+			"summary": "모든 것이 다시 시작된다!‘엔드게임’ 이후 변화된 세상,\r 스파이더맨 ‘피터 파커’는 학교 친구들과 유럽 여행을 떠나게 된다.\r 그런 그의 앞에 ‘닉 퓨리’가 등장해 도움을 요청하고\r 정체불명의 조력자 ‘미스테리오’까지 합류하게 되면서\r 전 세계를 위협하는 새로운 빌런 ‘엘리멘탈 크리쳐스’와 \r 맞서야만 하는 상황에 놓이게 되는데…",
+			"genre": [
+				19,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190527_181/1558933159657a210P_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "톰 홀랜드|사무엘 L. 잭슨",
+			"bechdelRating": 1,
+			"naverRating": 8.99
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 132623,
+		"fields": {
+			"movieName": "캡틴 마블",
+			"movieNameEn": "Captain Marvel",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-03-06",
+			"runningTime": "123분",
+			"director": "애너 보든",
+			"summary": "위기에 빠진 어벤져스의 희망!1995년, 공군 파일럿 시절의 기억을 잃고\r 크리족 전사로 살아가던 캐럴 댄버스(브리 라슨)가 지구에 불시착한다.\r 쉴드 요원 닉 퓨리(사무엘 L. 잭슨)에게 발견되어 팀을 이룬 그들은\r 지구로 향하는 더 큰 위협을 감지하고\r 힘을 합쳐 전쟁을 끝내야 하는데…",
+			"genre": [
+				19,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190225_72/1551069530582h2huX_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "브리 라슨|사무엘 L. 잭슨",
+			"bechdelRating": 3,
+			"naverRating": 8.45
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 167613,
+		"fields": {
+			"movieName": "조커",
+			"movieNameEn": "Joker",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-10-02",
+			"runningTime": "123분",
+			"director": "토드 필립스",
+			"summary": "“내 인생이 비극인줄 알았는데, 코미디였어”고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자.\r 하지만 모두가 미쳐가는 코미디 같은 세상에서\r 맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데…\r 이제껏 본 적 없는 진짜 ‘조커’를 만나라!",
+			"genre": [
+				7,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190906_128/1567761736426S6Fje_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "호아킨 피닉스",
+			"bechdelRating": 3,
+			"naverRating": 8.99
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 136873,
+		"fields": {
+			"movieName": "겨울왕국 2",
+			"movieNameEn": "Frozen 2",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-11-21",
+			"runningTime": "103분",
+			"director": "크리스 벅",
+			"summary": "내 마법의 힘은 어디서 왔을까?\r\n나를 부르는 저 목소리는 누구지?어느 날 부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다.\r 트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과 진실을 찾아 떠나야한다고 조언한다. \r \r 위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 숨겨진 과거의 진실을 찾아\r 크리스토프, 올라프 그리고 스벤과 함께 위험천만한 놀라운 모험을 떠나게 된다.\r 자신의 힘을 두려워했던 엘사는 이제 이 모험을 헤쳐나가기에 자신의 힘이 충분하다고 믿어야만 하는데…\r \r 두려움을 깨고 새로운 운명을 만나다!",
+			"genre": [
+				15,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20191121_221/1574298335357mqgLk_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "크리스틴 벨|이디나 멘젤",
+			"bechdelRating": 0,
+			"naverRating": 8.93
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 178526,
+		"fields": {
+			"movieName": "봉오동 전투",
+			"movieNameEn": "The Battle: Roar to Victory",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-08-07",
+			"runningTime": "135분",
+			"director": "원신연",
+			"summary": "임무는 단 하나! 달리고 달려, 일본군을 죽음의 골짜기로 유인하라!1919년 3.1운동 이후 봉오동 일대에서 독립군의 무장항쟁이 활발해진다.  일본은 신식 무기로 무장한 월강추격대를 필두로 독립군 토벌 작전을 시작하고, 독립군은 불리한 상황을 이겨내기 위해 봉오동 지형을 활용하기로 한다.  항일대도를 휘두르는 비범한 칼솜씨의 해철(유해진)과 발 빠른 독립군 분대장 장하(류준열) 그리고 해철의 오른팔이자 날쌘 저격수 병구(조우진)는 빗발치는 총탄과 포위망을 뚫고 죽음의 골짜기로 일본군을 유인한다.  계곡과 능선을 넘나들며 귀신같은 움직임과 예측할 수 없는 지략을 펼치는 독립군의 활약에 일본군은 당황하기 시작하는데...  1920년 6월, 역사에 기록된 독립군의 첫 승리 봉오동 죽음의 골짜기에 묻혔던 이야기가 지금부터 시작된다.",
+			"genre": [
+				19,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190719_213/1563513194134ksAGD_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "유해진|류준열",
+			"bechdelRating": 0,
+			"naverRating": 9.08
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 169637,
+		"fields": {
+			"movieName": "라이온 킹",
+			"movieNameEn": "The Lion King",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-07-17",
+			"runningTime": "118분",
+			"director": "존 파브로",
+			"summary": "새로운 세상, 너의 시대가 올 것이다!어린 사자 ‘심바’는 프라이드 랜드의 왕인 아버지 ‘무파사’를\r 야심과 욕망이 가득한 삼촌 ‘스카’의 음모로 잃고 왕국에서도 쫓겨난다.\r \r 기억해라! 네가 누군지.\r \r 아버지의 죽음에 대한 죄책감에 시달리던 ‘심바’는\r 의욕 충만한 친구들 ‘품바’와 ‘티몬’의 도움으로 희망을 되찾는다. \r 어느 날 우연히 옛 친구 ‘날라’를 만난 ‘심바’는 과거를 마주할 용기를 얻고, \r 진정한 자신의 모습을 찾아 위대하고도 험난한 도전을 떠나게 되는데…",
+			"genre": [
+				6,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190718_5/156341294592540aB6_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "도날드 글로버|비욘세",
+			"bechdelRating": 3,
+			"naverRating": 8.65
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 177909,
+		"fields": {
+			"movieName": "나쁜 녀석들: 더 무비",
+			"movieNameEn": "THE BAD GUYS: REIGN OF CHAOS",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-09-11",
+			"runningTime": "114분",
+			"director": "손용호",
+			"summary": "죄수들이 탈출했다! 교도소 호송차량이 전복되고 최악의 범죄자들이 탈주하는 사상 초유의 사건이 발생한다. 이에 경찰은 수감 중인 범죄자가 흉악범을 잡는 극비 프로젝트인 ‘특수범죄수사과’를 다시 소집한다.  미친개... 다시 풉시다! ‘오구탁’(김상중) 반장은 과거 함께 활약했던 전설의 주먹 ‘박웅철’(마동석)을 찾아가고,  감성 사기꾼 ‘곽노순’(김아중)과 전직 형사 ‘고유성’(장기용)을 영입해 새로운 팀을 구성한다.  새로운 멤버들이 합류해 더욱 강력하고 치밀하고 독해진 나쁜 녀석들. 이 사건을 파헤칠수록 배후에 거대한 범죄조직이 있다는 것을 직감한 그들은 더 나쁜 놈들을 소탕하기 위해 움직이기 시작하는데…  나쁜 녀석들의 법 없는 검거작전! 놈들처럼 생각하고 놈들처럼 행동할 그들이 온다!",
+			"genre": [
+				16,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190910_213/1568079594808C8bae_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "마동석|김상중",
+			"bechdelRating": 0,
+			"naverRating": 8.21
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 182355,
+		"fields": {
+			"movieName": "분노의 질주: 홉스&쇼",
+			"movieNameEn": "Fast & Furious Presents: Hobbs & Shaw",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-08-14",
+			"runningTime": "136분",
+			"director": "데이빗 레이치",
+			"summary": "드디어 그들이 만났다!공식적으로만 세상을 4번 구한 전직 베테랑 경찰 ‘루크 홉스’(드웨인 존슨)\r 분노 조절 실패로 쫓겨난 전직 특수요원 ‘데카드 쇼’(제이슨 스타뎀)\r 99.9% 완벽히 다른 두 남자는 전 세계를 위협하는 불가능한 미션을 해결하기 위해\r 어쩔 수 없이 한 팀이 되고 마는데…",
+			"genre": [
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190726_177/15641046254730gK1F_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "드웨인 존슨|제이슨 스타뎀",
+			"bechdelRating": 0,
+			"naverRating": 8.83
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 179482,
+		"fields": {
+			"movieName": "82년생 김지영",
+			"movieNameEn": "BORN 1982",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-10-23",
+			"runningTime": "118분",
+			"director": "김도영",
+			"summary": "1982년 봄에 태어나 누군가의 딸이자 아내, 동료이자 엄마로 2019년 오늘을 살아가는 ‘지영’(정유미). 때론 어딘가 갇힌 듯 답답하기도 하지만 남편 ‘대현’(공유)과 사랑스러운 딸, 그리고 자주 만나지 못해도 항상 든든한 가족들이 ‘지영’에겐 큰 힘이다.  하지만 언젠가부터 마치 다른 사람이 된 것처럼 말하는 ‘지영’. ‘대현’은 아내가 상처 입을까 두려워 그 사실을 털어놓지 못하고 ‘지영’은 이런 ‘대현’에게 언제나 “괜찮다”라며 웃어 보이기만 하는데…  모두가 알지만 아무도 몰랐던 당신과 나의 이야기",
+			"genre": [
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20191024_215/1571900079078PNazL_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "정유미|공유",
+			"bechdelRating": 0,
+			"naverRating": 9.2
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 101966,
+		"fields": {
+			"movieName": "토이 스토리 4",
+			"movieNameEn": "Toy Story 4",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-06-20",
+			"runningTime": "100분",
+			"director": "조시 쿨리",
+			"summary": "우리의 여행은 아직 끝나지 않았다!장난감의 운명을 거부하고 떠난 새 친구 ‘포키’를 찾기 위해 길 위에 나선 ‘우디’는 우연히 오랜 친구 ‘보핍’을 만나고 그녀를 통해 새로운 세상에 눈을 뜨게 된다. 한편, ‘버즈’와 친구들은 사라진 ‘우디’와 ‘포키’를 찾아 세상 밖 위험천만한 모험을 떠나게 되는데…",
+			"genre": [
+				15,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190611_117/1560221190708y3bbv_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "톰 행크스|팀 알렌",
+			"bechdelRating": 3,
+			"naverRating": 9.23
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 163608,
+		"fields": {
+			"movieName": "돈",
+			"movieNameEn": "Money",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-03-20",
+			"runningTime": "115분",
+			"director": "박누리",
+			"summary": "“부자가 되고 싶었다”오직 부자가 되고 싶은 꿈을 품고 여의도 증권가에 입성한 신입 주식 브로커 조일현(류준열).  빽도 줄도 없는, 수수료 O원의 그는 곧 해고 직전의 처지로 몰린다. 위기의 순간, 베일에 싸인 신화적인 작전 설계자 번호표(유지태)를 만나게 되고,  막대한 이익을 챙길 수 있는 거래 참여를 제안 받는다.  위험한 제안을 받아들인 후 순식간에 큰 돈을 벌게 되는 일현.  승승장구하는 일현 앞에 번호표의 뒤를 쫓던 금융감독원의 사냥개 한지철(조우진)이 나타나  그를 조여 오기 시작하는데…",
+			"genre": [
+				16
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190306_280/1551849045570X4iac_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "류준열|유지태",
+			"bechdelRating": 0,
+			"naverRating": 8.39
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 177967,
+		"fields": {
+			"movieName": "악인전",
+			"movieNameEn": "The Cop",
+			"watchGrade": "청소년 관람불가",
+			"openDate": "2019-05-15",
+			"runningTime": "110분",
+			"director": "이원태",
+			"summary": "우연히 연쇄살인마의 표적이 되었다 살아난 조직 보스 장동수와  범인잡기에 혈안이 된 강력반 미친개 정태석.  타협할 수 없는 두 사람이 연쇄살인마 K를 잡기 위해 손잡는다.   표적은 하나, 룰도 하나! 먼저 잡는 놈이 갖는다!",
+			"genre": [
+				16,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190515_203/1557888285764Rvouz_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "마동석|김무열",
+			"bechdelRating": 0,
+			"naverRating": 8.56
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 182205,
+		"fields": {
+			"movieName": "가장 보통의 연애",
+			"movieNameEn": "Crazy Romance",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-10-02",
+			"runningTime": "109분",
+			"director": "김한결",
+			"summary": "전 여친에 상처받은 ‘재훈’(김래원).  여느 때처럼 숙취로 시작한 아침,  모르는 번호의 누군가와 밤새 2시간이나 통화한 기록을 발견하게 되고   그 상대가 바로! 통성명한 지 24시간도 채 되지 않은 직장 동료 ‘선영’임을 알게 된다.   남친과 뒤끝 있는 이별 중인 ‘선영’(공효진).  새로운 회사로 출근한 첫날, 할 말 못 할 말 쏟아내며 남친과 헤어지던 현장에서 하필이면! 같은 직장의 ‘재훈’을 마주친다.  만난 지 하루 만에 일보다 서로의 연애사를 더 잘 알게 된 두 사람.  하지만 미묘한 긴장과 어색함도 잠시  ‘한심하다’, ‘어이없다’ 부딪히면서도 마음이 쓰이는 건 왜 그럴까?",
+			"genre": [
+				5
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190911_29/1568167420523xeKY5_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "김래원|공효진",
+			"bechdelRating": 0,
+			"naverRating": 8.56
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 167699,
+		"fields": {
+			"movieName": "말모이",
+			"movieNameEn": "MAL·MO·E: The Secret Mission",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-01-09",
+			"runningTime": "135분",
+			"director": "엄유나",
+			"summary": "까막눈 판수, 우리말에 눈뜨다! vs 조선어학회 대표 정환, ‘우리’의 소중함에 눈뜨다!1940년대 우리말이 점점 사라져가고 있는 경성. 극장에서 해고된 후 아들 학비 때문에 가방을 훔치다 실패한 판수. 하필 면접 보러 간 조선어학회 대표가 가방 주인 정환이다. 사전 만드는데 전과자에다 까막눈이라니! 그러나 판수를 반기는 회원들에 밀려 정환은 읽고 쓰기를 떼는 조건으로 그를 받아들인다. 돈도 아닌 말을 대체 왜 모으나 싶었던 판수는 난생처음 글을 읽으며 우리말의 소중함에 눈뜨고, 정환 또한 전국의 말을 모으는 ‘말모이’에 힘을 보태는 판수를 통해 ‘우리’의 소중함에 눈뜬다. 얼마 남지 않은 시간, 바짝 조여오는 일제의 감시를 피해 ‘말모이’를 끝내야 하는데…  우리말이 금지된 시대, 말과 마음이 모여 사전이 되다",
+			"genre": [
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20181227_80/1545901137289EGbWK_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "유해진|윤계상",
+			"bechdelRating": 0,
+			"naverRating": 9.19
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 177374,
+		"fields": {
+			"movieName": "증인",
+			"movieNameEn": "innocent witness",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-02-13",
+			"runningTime": "129분",
+			"director": "이한",
+			"summary": "“목격자가 있어. 자폐아야”  신념은 잠시 접어두고 현실을 위해 속물이 되기로 마음먹은 민변 출신의 대형 로펌 변호사 ‘순호’(정우성). 파트너 변호사로 승진할 수 있는 큰 기회가 걸린 사건의 변호사로 지목되자  살인 용의자의 무죄를 입증하기 위해  유일한 목격자인 자폐 소녀 ‘지우’(김향기)를 증인으로 세우려 한다.  “아저씨도 나를 이용할 겁니까?”  자기만의 세계에 빠져 의사소통이 어려운 ‘지우’. ‘순호’는 사건 당일 목격한 것을 묻기 위해 ‘지우’를 찾아가지만, 제대로 된 인사조차 나누지 못한다. 하지만 그날의 이야기를 듣기 위해 지우에게 다가가려 노력하는 ‘순호’,  시간이 흐를수록 조금씩 ‘지우’에 대해 이해하게 되지만 이제 두 사람은 법정에서 변호사와 증인으로 마주해야 하는데…  마음을 여는 순간,  진실이 눈앞에 다가왔다",
+			"genre": [
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190226_194/15511480897441tE6t_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "정우성|김향기",
+			"bechdelRating": 0,
+			"naverRating": 9.16
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 167099,
+		"fields": {
+			"movieName": "사바하",
+			"movieNameEn": "SVAHA : THE SIXTH FINGER",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-02-20",
+			"runningTime": "122분",
+			"director": "장재현",
+			"summary": "사람들은 말했다\n그때, 그냥, 그것이 죽었어야 한다고…한 시골 마을에서 쌍둥이 자매가 태어난다.  온전치 못한 다리로 태어난 ‘금화’(이재인)와 모두가 오래 살지 못할 것이라고 했던 언니 ‘그것’.  하지만 그들은 올해로 16살이 되었다.   신흥 종교 비리를 찾아내는 종교문제연구소 ‘박목사’(이정재)는   사슴동산이라는 새로운 종교 단체를 조사 중이다.  영월 터널에서 여중생이 사체로 발견되는 사건이 발생하고  이를 쫓던 경찰과 우연히 사슴동산에서 마주친 박목사는 이번 건이 심상치 않음을 직감한다.   하지만 진실이 밝혀지기 전 터널 사건의 용의자는 자살하고,  그가 죽기 전 마지막으로 만난 실체를 알 수 없는 정비공 ‘나한’(박정민)과  16년 전 태어난 쌍둥이 동생 금화의 존재까지  사슴동산에 대해 파고들수록 박목사는 점점 더 많은 미스터리와 마주하게 되는데…!  그것이 태어나고 모든 사건이 시작되었다",
+			"genre": [
+				13,
+				7
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190128_284/1548637887932Dwfkj_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "이정재|박정민",
+			"bechdelRating": 0,
+			"naverRating": 7.41
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 167605,
+		"fields": {
+			"movieName": "터미네이터: 다크 페이트",
+			"movieNameEn": "Terminator: Dark Fate",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-10-30",
+			"runningTime": "128분",
+			"director": "팀 밀러",
+			"summary": "심판의 날 그 후, 모든 것이 다시 시작된다!심판의 날 그 후, 뒤바뀐 미래  새로운 인류의 희망 ‘대니’(나탈리아 레이즈)를 지키기 위해 슈퍼 솔져 ‘그레이스’(맥켄지 데이비스)가 미래에서 찾아오고, ‘대니’를 제거하기 위한 터미네이터 ‘Rev-9’(가브리엘 루나)의 추격이 시작된다.   최첨단 기술력으로 무장한 최강의 적 터미네이터 ‘Rev-9’의 무차별적인 공격에 쫓기기 시작하던 ‘그레이스’와 ‘대니’ 앞에 터미네이터 헌터 ‘사라 코너’(린다 해밀턴)가 나타나 도움을 준다.   인류의 수호자이자 기계로 강화된 슈퍼 솔져 ‘그레이스’와 ‘사라 코너’는 ‘대니’를 지키기 위해  새로운 조력자를 찾아 나서고, 터미네이터 ‘Rev-9’은 그들의 뒤를 끈질기게 추격하는데...  더 이상 정해진 미래는 없다  지키려는 자 VS 제거하려는 자, 새로운 운명이 격돌한다!",
+			"genre": [
+				18,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20191030_118/1572411669676j0Arb_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "맥켄지 데이비스|아놀드 슈왈제네거",
+			"bechdelRating": 3,
+			"naverRating": 8.59
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 96951,
+		"fields": {
+			"movieName": "타짜: 원 아이드 잭",
+			"movieNameEn": "Tazza: One Eyed Jack",
+			"watchGrade": "청소년 관람불가",
+			"openDate": "2019-09-11",
+			"runningTime": "139분",
+			"director": "권오광",
+			"summary": "전설적인 타짜 ‘짝귀’의 아들이자 고시생인 ‘일출’(박정민)은 공부에는 흥미가 없지만 포커판에서는 날고 기는 실력자다. 포커판에서 우연히 알게 된 ‘마돈나’(최유화)의 묘한 매력에 빠져든 일출은 그녀의 곁을 지키는 ‘이상무’(윤제문)에게 속아 포커의 쓴맛을 제대로 배운다. 돈도 잃고 자존심까지 무너진 채 벼랑 끝에 몰린 도일출, 그의 앞에 정체불명의 타짜 ‘애꾸’(류승범)가 나타난다.  거액이 걸린 거대한 판을 설계한 애꾸는 전국에서 타짜들을 불러모은다. 일출을 시작으로 셔플의 제왕 까치(이광수), 남다른 연기력의 영미(임지연), 숨은 고수 권원장(권해효)까지 무엇이든 될 수 있고, 누구든 이길 수 있는 ‘원 아이드 잭’ 팀으로 모인 이들, 인생을 바꿀 새로운 판에 뛰어드는데…  베팅을 할 때는 인생을 걸어야지! 타짜니까!",
+			"genre": [
+				16,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190823_200/1566544005806zhoyN_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "박정민|류승범",
+			"bechdelRating": 0,
+			"naverRating": 6.85
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 179159,
+		"fields": {
+			"movieName": "신의 한 수: 귀수편",
+			"movieNameEn": "The Divine Move 2: The Wrathful",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-11-07",
+			"runningTime": "106분",
+			"director": "리건",
+			"summary": "“세상은 둘 중 하나야\n놀이터가 되던가, 생지옥이 되던가”바둑으로 모든 것을 잃은 아이 ‘귀수’ 유일하게 기대던 스승 허일도마저 잃고 홀로 살아남아 세상을 향한 복수를 계획한다. 운명의 선택은 神의 놀음판에 있다! 자신을 사지로 내몬 냉혹한 내기바둑판으로 뛰어든 귀수(권상우)는 전국을 돌아다니며 귀신 같이 바둑을 두는 자들과 대결을 펼치는데…  사활을 건 대결! 신의 한 수를 다시 두시겠습니까?",
+			"genre": [
+				16,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20191029_52/15723135180872xOKy_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "권상우|김희원",
+			"bechdelRating": 0,
+			"naverRating": 8.84
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 66728,
+		"fields": {
+			"movieName": "알리타: 배틀 엔젤",
+			"movieNameEn": "Alita: Battle Angel",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-02-05",
+			"runningTime": "122분",
+			"director": "로버트 로드리게즈",
+			"summary": "인간의 두뇌를 가진 기계 소녀\r\n그녀는 인간인가? 기계인가? 진짜 나를 깨워라!모두가 갈망하는 공중도시와 그들을 위해 존재하는 고철도시로 나누어진 26세기.\r 고철 더미 속 모든 기억을 잃은 채 깨어난 알리타는 마음 따뜻한 의사 이도의 보살핌으로 새로운 삶을 시작한다. \r 이도는 사이보그인 알리타에게 특별한 과거의 비밀과 영혼이 존재한다는 사실을 깨닫고\r 미스터리한 과거로부터 그녀를 지키고자 한다. \r 한편, 새로운 친구 휴고는 알리타가 위험한 고철도시를 헤쳐나갈 수 있는 방법과 함께 기억을 되찾도록 돕는다.\r \r 알리타가 자신의 과거에 다가 갈수록 도시를 지배하는 악랄한 세력들이 그녀를 노리며 제거하려고 하고   \r 자신이 착취와 약탈의 고철도시를 구할 수 있는 열쇠임을 깨닫게 된 알리타는\r 사랑하는 가족과 친구, 새로운 세상을 위해 통제된 세상의 무시무시한 적들과 맞서게 되는데…",
+			"genre": [
+				19,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190128_22/1548638810964Go9Wy_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "로사 살라자르|크리스토프 왈츠",
+			"bechdelRating": 3,
+			"naverRating": 8.82
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 189053,
+		"fields": {
+			"movieName": "블랙머니",
+			"movieNameEn": "BLACK MONEY",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-11-13",
+			"runningTime": "113분",
+			"director": "정지영",
+			"summary": "고발은 의무! 수사는 직진!\n할말은 하고 깔 건 깐다!일명 서울지검 ‘막프로’! 검찰 내에서 거침없이 막 나가는 문제적 검사로  이름을 날리는 ‘양민혁’은 자신이 조사를 담당한 피의자가 자살하는 사건으로 인해  하루 아침에 벼랑 끝에 내몰린다. 억울한 누명을 벗기 위해 내막을 파헤치던 그는  피의자가 대한은행 헐값 매각사건의 중요 증인이었음을 알게 된다.   근거는 의문의 팩스 5장! 자산가치 70조 은행이 1조 7천억원에 넘어간  희대의 사건 앞에서 ‘양민혁’ 검사는 금융감독원, 대형 로펌, 해외펀드 회사가 뒤얽힌  거대한 금융 비리의 실체와 마주하게 되는데…   대한민국 최대의 금융스캔들, 사건은 아직 끝나지 않았다!",
+			"genre": [
+				16,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20191113_203/1573610067050zNCj1_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "조진웅|이하늬",
+			"bechdelRating": 0,
+			"naverRating": 9.05
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 164172,
+		"fields": {
+			"movieName": "내안의 그놈",
+			"movieNameEn": "Inside me",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-01-09",
+			"runningTime": "122분",
+			"director": "강효진",
+			"summary": "나 너니? 너 나니??\n제대로 바뀐 아재와 고딩, 웃음 대환장 파티!엘리트 아재 판수(박성웅)를 우연히 옥상에서 떨어진 고등학생 동현(진영)이 덮치면서 제대로 바뀐다.  게다가 판수는 동현의 몸으로 첫사랑 미선(라미란)과 존재도 몰랐던 딸 현정(이수민)을 만나게 되는데…  대유잼의 향연, 넌 이미 웃고 있다!",
+			"genre": [
+				2,
+				11
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20181204_172/1543891228332kV3d1_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "진영|박성웅",
+			"bechdelRating": 0,
+			"naverRating": 8.76
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 164173,
+		"fields": {
+			"movieName": "뺑반",
+			"movieNameEn": "Hit-and-Run Squad",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-01-30",
+			"runningTime": "133분",
+			"director": "한준희",
+			"summary": "Hit and Run 상황 발생, \n순마 출동합니다!경찰 내 최고 엘리트 조직 내사과 소속 경위 ‘은시연’(공효진). 조직에서 유일하게 믿고 따르는 ‘윤과장’(염정아)과 함께 F1 레이서 출신의 사업가 ‘정재철’(조정석)을 잡기 위해 수사망을 조여가던 시연은 무리한 강압 수사를 벌였다는 오명을 쓰고 뺑소니 전담반으로 좌천된다.   알고 보면 경찰대 수석 출신, 만삭의 리더 ‘우계장’(전혜진)과  차에 대한 천부적 감각을 지닌 에이스 순경 ‘서민재’(류준열).  팀원은 고작 단 두 명, 매뉴얼도 인력도 시간도 없지만 뺑소니 잡는 실력만큼은 최고인 ‘뺑반’.  계속해서 재철을 예의주시하던 시연은 뺑반이 수사 중인 미해결 뺑소니 사건의 유력한 용의자가 재철임을 알게 된다.  뺑소니 친 놈은 끝까지 쫓는 뺑반 에이스 민재와  온갖 비리를 일삼는 재철을 잡기 위해 모든 것을 건 시연.  하나의 목표를 향해 힘을 합친 그들의 팀플레이가 시작되는 가운데 방법을 가리지 않고 수사망을 빠져 나가려는 통제불능 스피드광 재철의 반격 역시 점점 과감해지는데…!",
+			"genre": [
+				16,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190115_40/15475402622236yHgr_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "공효진|류준열",
+			"bechdelRating": 0,
+			"naverRating": 7.16
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 180351,
+		"fields": {
+			"movieName": "변신",
+			"movieNameEn": "Metamorphosis",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-08-21",
+			"runningTime": "113분",
+			"director": "김홍선",
+			"summary": "“어제 밤에는 아빠가 두 명이었어요”사람의 모습으로 변신하는 악마가 우리 가족 안에 숨어들면서 기이하고 섬뜩한 사건들이 벌어진다 서로 의심하고 증오하고 분노하는 가운데 구마 사제인 삼촌 '중수'가 예고없이 찾아오는데…  절대 믿지도 듣지도 마라",
+			"genre": [
+				4,
+				7
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190821_179/1566364206702zsxW4_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "배성우|성동일",
+			"bechdelRating": 0,
+			"naverRating": 7.92
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 152632,
+		"fields": {
+			"movieName": "주먹왕 랄프 2: 인터넷 속으로",
+			"movieNameEn": "Ralph Breaks the Internet",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-01-03",
+			"runningTime": "112분",
+			"director": "필 존스턴",
+			"summary": "오락실 게임 세상에 이어\n이번엔 인터넷 세상이 발칵 뒤집힌다?!각종 사고를 치며 게임 속 세상을 뒤집어 놨던 절친 주먹왕 ‘랄프’와 ‘바넬로피’는 버려질 위기에 처한 오락기 부품을 구하기 위해 와이파이를 타고 인터넷 세상에 접속한다.   얼떨결에 올린 동영상으로 순식간에 핵인싸에 등극한 ‘랄프’와 룰도 트랙도 없는 스릴만점 슬로터 레이스 게임에 참여하게 된 ‘바넬로피’   지금껏 경험한 적 없는 엄청난 스케일과 새로운 재미에 흠뻑 빠진  ‘랄프’와 ‘바넬로피’는 랜섬웨어급 사고로 인터넷 세상을 혼란에 빠뜨리는데…  과연, 이들은 무사히 집에 돌아갈 수 있을까?",
+			"genre": [
+				15,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20181204_287/1543888062606NHMh7_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "존 C. 라일리|사라 실버맨",
+			"bechdelRating": 3,
+			"naverRating": 8.96
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 174065,
+		"fields": {
+			"movieName": "걸캅스",
+			"movieNameEn": "Miss & Mrs. Cops",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-05-09",
+			"runningTime": "107분",
+			"director": "정다원",
+			"summary": "민원실 퇴출 0순위 전직 전설의 형사 '미영'과 민원실로 밀려난 현직 꼴통 형사 '지혜' 집에서는 눈만 마주쳐도 으르렁 대는 시누이 올케 사이인 두 사람은  민원실에 신고접수를 하기 위해 왔다가 차도에 뛰어든 한 여성을 목격하고  그녀가 48시간 후 업로드가 예고된 디지털 성범죄 사건의 피해자란 사실을 알게 된다. 강력반, 사이버 범죄 수사대, 여성청소년계까지 경찰 내 모든 부서들에서 복잡한 절차와 인력 부족을 이유로 사건이 밀려나자  ‘미영’과 ‘지혜’는 비공식 수사에 나서기로 결심한다.   수사가 진전될수록 형사의 본능이 꿈틀대는 ‘미영’과 정의감에 활활 불타는 ‘지혜’는  드디어 용의자들과 마주할 기회를 잡게 되는데…  걸크러시 콤비의 비공식 합동 수사가 펼쳐진다!",
+			"genre": [
+				11,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190418_272/155557683107045leS_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "라미란|이성경",
+			"bechdelRating": 0,
+			"naverRating": 9.01
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 178544,
+		"fields": {
+			"movieName": "사자",
+			"movieNameEn": "The Divine Fury",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-07-31",
+			"runningTime": "129분",
+			"director": "김주환",
+			"summary": "어릴 적 아버지를 잃은 뒤 세상에 대한 불신만 남은 격투기 챔피언 ‘용후’(박서준).  어느 날 원인을 알 수 없는 깊은 상처가 손바닥에 생긴 것을 발견하고, 도움을 줄 누군가가 있다는 장소로 향한다. 그곳에서 바티칸에서 온 구마사제 ‘안신부’(안성기)를 만나   자신의 상처 난 손에 특별한 힘이 있음을 깨닫게 되는 ‘용후’.  이를 통해 세상을 혼란에 빠뜨리는 악(惡)의 존재를 알게 되고, 강력한 배후이자 악을 퍼뜨리는 검은 주교 ‘지신’(우도환)을 찾아 나선 ‘안신부’와 함께 하게 되는데...!  악의 편에 설 것인가  악에 맞설 것인가  신의 사자가 온다!",
+			"genre": [
+				13,
+				19
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190625_168/1561426986010A3uBi_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "박서준|안성기",
+			"bechdelRating": 0,
+			"naverRating": 7.92
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 109193,
+		"fields": {
+			"movieName": "드래곤 길들이기 3",
+			"movieNameEn": "How to Train Your Dragon: The Hidden World",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-01-30",
+			"runningTime": "104분",
+			"director": "딘 데블로이스",
+			"summary": "영원히 기억될 그들의 마지막 모험이 시작된다!영원한 친구 히컵과 투슬리스의 활약으로\r 사람과 드래곤이 공존하며 평화롭게 살아가는 버크섬.\r 새로운 드래곤 ‘라이트 퓨어리’를 쫓아간 투슬리스를 찾다가\r 히컵은 누구도 찾지 못했던 드래곤의 파라다이스 ‘히든월드’를 우연히 발견하게 된다.\r 하지만 평화도 잠시, 역대 최악의 드래곤 헌터 그리멜의 등장으로\r 드래곤들의 안전과 버크섬의 평화까지 위협받기 시작하는데…",
+			"genre": [
+				15,
+				6
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190131_168/1548898773611USlT7_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "제이 바루첼|아메리카 페레라",
+			"bechdelRating": 2,
+			"naverRating": 9.26
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 175366,
+		"fields": {
+			"movieName": "나의 특별한 형제",
+			"movieNameEn": "INSEPARABLE BROS",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-05-01",
+			"runningTime": "114분",
+			"director": "육상효",
+			"summary": "머리 좀 쓰는 형 x 몸 좀 쓰는 동생!\n세상엔 이런 형제도 있다!비상한 두뇌를 가졌지만 동생 ‘동구’ 없이는 아무 데도 못 가는 형 ‘세하’(신하균), 뛰어난 수영실력을 갖췄지만 형 ‘세하’ 없이는 아무것도 못 하는 동생 ‘동구’(이광수). 이들은 피 한 방울 섞이지 않았지만 20년 동안 한 몸처럼 살아온 ‘특별한 형제’다.  어느 날 형제의 보금자리 ‘책임의 집’을 운영하던 신부님이 돌아가시자 모든 지원금이 끊기게 되고, 각각 다른 장애를 가진 두 사람은 헤어질 위기에 처하고 만다.  세하는 ‘책임의 집’을 지키고 동구와 떨어지지 않기 위해 구청 수영장 알바생이자 취준생 ‘미현’(이솜)을 수영코치로 영입하고, 동구를 수영대회에 출전시켜 사람들의 이목을 집중시키는 데 성공한다.  헤어지지 않을 수 있다는 희망을 본 것도 잠시, 예상치 못한 인물이 형제 앞에 등장하면서 형제는 새로운 위기를 겪게 되는데...!",
+			"genre": [
+				1,
+				11
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190404_182/1554340290133Khnb5_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "신하균|이광수",
+			"bechdelRating": 0,
+			"naverRating": 9.15
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 181414,
+		"fields": {
+			"movieName": "어스",
+			"movieNameEn": "Us",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-03-27",
+			"runningTime": "116분",
+			"director": "조던 필",
+			"summary": "우리는 누구인가?\r 엄마, 아빠, 딸, 아들\r 그리고 다시\r 엄마, 아빠, 딸, 아들…",
+			"genre": [
+				7,
+				4
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190329_232/1553849027701K0DBy_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "루피타 뇽|윈스턴 듀크",
+			"bechdelRating": 3,
+			"naverRating": 7.69
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 167635,
+		"fields": {
+			"movieName": "말레피센트 2",
+			"movieNameEn": "Maleficent: Mistress of Evil",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-10-17",
+			"runningTime": "119분",
+			"director": "요아킴 뢰닝",
+			"summary": "동화는 끝났다!\r\n두 세계의 운명을 건 가장 사악한 전쟁이 시작된다!강력한 어둠의 지배자이자 무어스 숲의 수호자 ‘말레피센트’는 딸처럼 돌봐온 ‘오로라’와 ‘필립 왕자’의 결혼 약속으로 인간 세계의 ‘잉그리스 왕비’와 대립하게 된다.\r 이에 요정과 인간의 오랜 연합이 깨지고 숨겨진 요정 종족 다크페이의 리더 ‘코널’까지 등장하면서 두 세계는 피할 수 없는 거대한 전쟁에 휘말리게 되는데…..",
+			"genre": [
+				2
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20191004_160/1570150829240zmLfa_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "안젤리나 졸리|엘르 패닝",
+			"bechdelRating": 3,
+			"naverRating": 8.53
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 179158,
+		"fields": {
+			"movieName": "유열의 음악앨범",
+			"movieNameEn": "Tune in for Love",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-08-28",
+			"runningTime": "122분",
+			"director": "정지우",
+			"summary": "\"오늘 기적이 일어났어요.\" 1994년 가수 유열이 라디오 DJ를 처음 진행하던 날, 엄마가 남겨준 빵집에서 일하던 미수(김고은)는 우연히 찾아 온 현우(정해인)를 만나  설레는 감정을 느끼게 되지만 뜻하지 않은 사건으로 인해 연락이 끊기게 된다.  \"그때, 나는 네가 돌아오지 않을 거라고 생각했어. 그래도 기다렸는데…\" 다시 기적처럼 마주친 두 사람은 설렘과 애틋함 사이에서 마음을 키워 가지만 서로의 상황과 시간은 자꾸 어긋나기만 한다. 계속되는 엇갈림 속에서도 라디오 ‘유열의 음악앨범’과 함께 우연과 필연을 반복하는 두 사람…   함께 듣던 라디오처럼 그들은 서로의 주파수를 맞출 수 있을까?",
+			"genre": [
+				5,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190806_57/1565060277522KjSpd_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "김고은|정해인",
+			"bechdelRating": 0,
+			"naverRating": 7.83
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 180390,
+		"fields": {
+			"movieName": "퍼펙트맨",
+			"movieNameEn": "Man of Men",
+			"watchGrade": "15세 관람가",
+			"openDate": "2019-10-02",
+			"runningTime": "116분",
+			"director": "용수",
+			"summary": "“이렇게 살다 죽으면 12억, 사고로 죽으면 27억!\n내 일 도와주면 사망보험금 니 앞으로 해줄게”퍼펙트한 인생을 위해 한탕을 꿈꾸는 건달 ‘영기’(조진웅) 조직 보스의 돈 7억을 빼돌려 주식에 투자하지만, 사기꾼에게 속아 주식은 휴지조각이 되고 만다. 목숨을 부지하기 위해 어떻게든 7억을 구해야 하는 영기 앞에 까칠한 로펌 대표 ‘장수’(설경구)가 나타난다.  두 달 시한부 ‘장수’는 자신이 해야 할 일들을 도와주는 조건으로 영기에게 자신의 사망보험금을 내건 빅딜을 제안하는데…  돈 쫌 많은 로펌 대표와 폼 쫌 잡는 꼴통 건달 퍼펙트하게 다른 두 남자의 인생 최대 반전이 시작된다",
+			"genre": [
+				11,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190918_70/1568789034699xL82H_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "설경구|조진웅",
+			"bechdelRating": 0,
+			"naverRating": 8.52
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 174050,
+		"fields": {
+			"movieName": "생일",
+			"movieNameEn": "Birthday",
+			"watchGrade": "전체 관람가",
+			"openDate": "2019-04-03",
+			"runningTime": "120분",
+			"director": "이종언",
+			"summary": "\"2014년 4월 이후... 남겨진 우리들의 이야기\"  세상을 먼저 떠난 아들 ‘수호’ 에 대한 그리움을 안고 살아가는 '정일'과 '순남'의 가족. 어김없이 올해도 아들의 생일이 돌아오고, 가족들의 그리움은 더욱 커져만 간다.  수호가 없는 수호의 생일. 가족과 친구들은 함께 모여 서로가 간직했던 특별한 기억을 선물하기로 하는데..  1년에 단 하루. 널 위해, 우리 모두가 다시 만나는 날. \"영원히 널 잊지 않을게.\"",
+			"genre": [
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190329_223/1553847778414CTAcF_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "설경구|전도연",
+			"bechdelRating": 0,
+			"naverRating": 9.01
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": 175316,
+		"fields": {
+			"movieName": "힘을 내요, 미스터 리",
+			"movieNameEn": "MR. LEE",
+			"watchGrade": "12세 관람가",
+			"openDate": "2019-09-11",
+			"runningTime": "111분",
+			"director": "이계벽",
+			"summary": "가던 길도 멈추게 하는 심쿵 비주얼의 대복칼국수 반전미남 ‘철수’(차승원) 완벽한 외모와 달리 아이보다 더 아이 같은 그의 앞에 어느 날 어른보다 더 어른 같은 딸 ‘샛별’(엄채영)이 나타난다.  오늘 처음 봤는데… 내 딸이라고??? 누구냐 넌?!  마른하늘에 '딸'벼락 맞은 철수의 미스터리한 정체가 밝혀진다!",
+			"genre": [
+				11,
+				1
+			],
+			"posterUrl": "https://movie-phinf.pstatic.net/20190828_246/1566958975223z5NAU_JPEG/movie_image.jpg?type=m203_290_2",
+			"actors": "차승원|엄채영",
+			"bechdelRating": 0,
+			"naverRating": 8.41
+		}
+	}
+]

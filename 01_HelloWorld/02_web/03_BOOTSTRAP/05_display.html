@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .bg-test1 {
+            background-color: #551628;
+        }
+
+        .bg-test2 {
+            background-color: #C02044;
+        }
+
+        .bg-test5 {
+            background-color: #EEF3FA;
+        }
+
+        .bg-test3 {
+            background-color: #FF5180;
+        }
+
+        .bg-test4 {
+            background-color: #F474A5;
+        }
+
+        .tx-test1 {
+            color: #551628;
+        }
+
+        .tx-test2 {
+            color: #C02044;
+        }
+
+        .tx-test5 {
+            color: #EEF3FA;
+        }
+
+        .tx-test3 {
+            color: #FF5180;
+        }
+
+        .tx-test4 {
+            color: #F474A5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="d-inline p-2 bg-test1 tx-test5">d-inline</div>
+    <div class="d-inline p-2 bg-test2 tx-test5">d-inline</div>
+    <!-- padding 없는 애한테 어거지로 넣어서 출력 화면이 겹치게 나오는 것 - 되도록 ㄴㄴ지만 여튼 클래스로 이케저케 그렇슴 -->
+
+    <span class="d-block p-1 bg-test3 tx-test5">d-block</span>
+    <span class="d-block p-1 bg-test4 tx-test5">d-block</span>
+
+    <!-- 특정 가로폭 사이즈, 경계선을 기준으로 반응형 -->
+    <!-- xs가 모바일이었는데 생략 됨 그래서 d-none -->
+    <div class="d-lg-none bg-test2">Hide this when Display is large</div>
+    <div class="d-none d-lg-block bg-test4">Let's check</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

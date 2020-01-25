@@ -1,0 +1,23 @@
+<div>
+    <form action="{% url 'board:new_comment' article.id %}" method="POST">
+        {% csrf_token %}
+        {{ comment_form.as_p }}
+        <input type="submit">
+    </form>
+</div>
+
+<div>
+    {% if comments %}
+        <ul>
+            {% for comment in comments %}
+                <li>{{ comment.content }}</li>
+                
+                <form action="{% url 'board:delete_comment' article.id comment.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" value="[x]">
+                </form>
+                <button>수정,,</button>
+            {% endfor %}
+        </ul>
+    {% endif %}    
+</div>

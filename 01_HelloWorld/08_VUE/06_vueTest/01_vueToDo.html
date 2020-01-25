@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.6;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <select v-model="showMode">
+            <option value="all">모두 보기</option>
+            <option value="active">할 일 보기</option>
+            <option value="done">끝난 일 보기</option>
+        </select>
+
+        <input type="text"
+            v-model="newTodo"
+            v-on:keyup.enter="addTodo"
+        >
+
+        <button v-on:click="addTodo">+</button>
+
+        <button v-on:click="cleareCompleted">Clear completed</button>
+
+        <ul>
+            <li
+                v-for="todo in sortedTodos"
+                v-bind:key="todo.id"
+                v-if="!todo.completed"
+                v-on:click="check(todo)"
+            >
+                <input type="checkbox" v-model="todo.completed">
+                <span>{{ todo.content }}</span>
+            </li>
+            <li
+                v-else
+                v-bind:key="todo.id"
+                v-on:click="check(todo)"
+                class="completed"
+            >
+                <span>{{ todo.content }}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        const STORAGE_KEY = "vue-todos";
+        const todoStorage = {
+            load() {
+                return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+            },
+            save(todosArray) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(todosArray))
+            }
+        };
+
+
+        const app = new Vue({
+            el: "#app",
+            data: {
+                newTodo: '',
+                todos: todoStorage.load(),
+                showMode: 'all',
+            },
+            methods: {
+                check: function(todo) {
+                    todo.completed = !todo.completed;
+                },
+                addTodo: function() {
+                    this.todos.push({
+                        id: Date.now(),
+                        content: this.newTodo,
+                        completed: false,
+                    });
+                    this.newTodo = '';
+                },
+                cleareCompleted() {
+                    this.todos = this.todos.filter(todo => !todo.completed);
+                },
+                cleareCompleted2() {
+                    const newTodos = [];
+                    for (const todo of this.todos) {
+                        if (!todo.completed) {
+                            newTodos.push(todo);
+                        }
+                    };
+                    this.todos = newTodos
+                },
+            },
+            computed: {
+                sortedTodos () {
+                    if (this.showMode === 'active') {
+                        const notFinished = []
+                        for (const todo of this.todos) {
+                            if (!todo.completed) {notFinished.push(todo)}
+                        }
+                        return notFinished
+                    }
+                    else if (this.showMode === 'done') {
+                        return this.todos.filter(todo => todo.completed)
+                    }
+                    else {
+                        return this.todos
+                    }
+                },
+            },
+            watch: {
+                todos: {
+                    handler: function() {
+                        todoStorage.save(this.todos);
+                    },
+                    deep: true,
+                },
+            },
+        });
+    </script>
+
+
+</body>
+</html>

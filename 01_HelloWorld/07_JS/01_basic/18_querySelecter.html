@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="js">
+        <div id="my-id" class="my-class">
+            1
+        </div>
+        <div id="my-class">
+            2
+        </div>
+        <div id="my-class">
+            3
+        </div>
+    </div>
+
+
+    <script>
+        const a = document.querySelector('div');
+        const test = document.querySelector('div>div');
+        const b = document.querySelector('.my-class');
+        const c = document.querySelector('#my-id');
+
+        const d = document.querySelectorAll('div') // Nodelist
+        const e = document.querySelectorAll('.my-class')
+        const f = document.querySelectorAll('#my-id')
+
+        const g = document.createElement('div')
+        const h = document.createElement('#new-one')
+        const i = document.createElement('div#new-one')
+        const j = document.createElement('div.my-class')
+
+        g.classList.add('my-class')
+        // <div class="my-class"></div>
+    </script>
+</body>
+
+</html>

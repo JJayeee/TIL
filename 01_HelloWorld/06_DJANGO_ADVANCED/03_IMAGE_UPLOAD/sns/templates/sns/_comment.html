@@ -1,0 +1,44 @@
+<div class="col-12 col-md-6">
+    <!-- 댓글 -->
+    <div class="card mb-2">
+        <div class="card-body">
+            <form action="{% url 'sns:create_comment' posting.id %}" method="POST">
+                {% csrf_token %}
+                <label for="content"><strong>{{ request.user }}</strong>, leave comment</label>
+                <!-- 요청을 보내고있는 지금, 그 사람의 user name이 나와야 해서 -->
+                <!-- posting.user는 글 작성자 -->
+                <input type="text" name="content" id="content" class="form-control" autofocus>
+                <!-- 여기서 name이 comment 였어서 오류 남 : model form이 꺼내가질 못함 -->
+            </form>
+        </div>
+    </div>
+
+    <!-- 댓글 내역 -->
+    <div class="card">
+        <ul class="list-group list-group-flush">
+            {% if comments %}
+                {% for comment in comments %}
+                    <li class="list-group-item mb-1">
+                        <div class="row">
+                            <div class="col-10">
+                                {% comment %} {{ forloop.counter }}: {% endcomment %}
+                                <strong>{{ comment.user }}</strong> : {{ comment.content }}
+                            </div>
+                            {% if comment.user == request.user %}
+                            <div class="col-2">
+                                <form action="{% url 'sns:delete_comment' posting.id comment.id %}" method="POST">
+                                    {% csrf_token %}
+                                    <button><i class="fas fa-trash"></i></button>
+                                </form>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <li class="list-group-item mb-1">No comments yet</li>
+            {% endif %}
+
+        </ul>
+    </div>
+</div>

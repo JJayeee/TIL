@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <button v-on:click="getCatImage">cat</button>
+        <button v-on:click="getDogImage">dog</button>
+        <span>cats: {{ catCount }}</span>
+        <span>dogs: {{ dogCount }}</span>
+        <div>
+            <img
+                v-for="image in imageUrls"
+                v-if="image"
+                v-bind:src="image"
+                alt="animal-image"
+                height="200px"
+            >
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                catCount: 0,
+                dogCount: 0,
+                imageUrls: [],
+            },
+
+            methods: {
+                getCatImage: function() {
+                    const URL = "https://api.thecatapi.com/v1/images/search";
+                    fetch(URL)
+                        .then(resJson => resJson.json())
+                        .then(resdata => {
+                            // console.log(resdata)
+                            this.imageUrls.push(resdata[0].url);
+                            this.catCount++;
+                        });
+                },
+                getDogImage: function() {
+                    const URL = "https://dog.ceo/api/breeds/image/random";
+                    axios.get(URL)
+                        .then(resData => {
+                            // console.log(resData)
+                            this.imageUrls.push(resData.data.message);
+                            this.dogCount++;
+                        }
+                    );
+                },
+            },
+        })
+    
+    </script>
+    
+</body>
+</html>

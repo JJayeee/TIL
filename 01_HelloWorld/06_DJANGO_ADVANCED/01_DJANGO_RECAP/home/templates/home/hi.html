@@ -1,0 +1,12 @@
+{% extends 'home/base.html' %}
+{% block title %}
+    Greeting Page :)
+{% endblock %}
+
+{% block body %}
+    {% if name == 'hi' %}
+        <h1>hihi??</h1>
+    {% else %}
+        <h1>Hi, {{ name }} :)</h1>
+    {% endif %}
+{% endblock %}

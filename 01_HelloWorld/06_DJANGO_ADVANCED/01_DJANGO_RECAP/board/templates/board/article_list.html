@@ -1,0 +1,42 @@
+{% extends 'board/base.html' %}
+{% block title %}Article list{% endblock  %}
+
+{% block body %}
+    <h1>This is Article List</h1>
+
+    {% comment %} 
+    만약, 한 번도 글이 안 쓰여진 시점에는? 
+    $ python manage.py migrate board zero
+
+    get은 error, all은 error는 안 나지만 빈 리스트 
+    그러면 ul tag만 있고 내용은 없는 상태
+    markup은 의미론 적인 것 -> ul 안에 없으면 ul 도 없도록 
+    {% endcomment %}
+    {% if articles %}
+        <ul>
+            {% for article in articles %}
+                <li>
+                    <a href="{{ article.get_absolute_url }}">
+                    {% comment %} model에 method 추가 했다면 {% endcomment %}
+                    {% comment %} {{ article.get_absolute_url }} {% endcomment %}
+                    {% comment %} () 아님 주의. 위의 것에 따라 return 되고 출력 됨 {% endcomment %}
+                    {{ article.title }}
+                    </a>
+                </li>
+            {% endfor %}
+            <div>
+                <a href="{% url 'board:new_article' %}">
+                    <button>새 글 작성</button>
+                </a>
+            </div>
+        </ul>
+    {% endif %}
+{% endblock  %}
+
+
+{% comment %}
+<a href="{% url 'board:detail' %}">{{ article.title }}</a>
+
+NoReverseMatch at /board/articles/
+Reverse for 'detail' with no arguments not found. 
+{% endcomment %}

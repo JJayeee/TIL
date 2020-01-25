@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h1>Article List</h1>
+    {% for article in articles %}
+        <h2>{{ article.user }}: <a href="{% url 'articles:article_detail' article.id %}">{{ article.title }}</a></h2>
+        <p>{{ article.like_users.count }}명이 좋아합니다.</p>
+    {% endfor %}
+{% endblock %}

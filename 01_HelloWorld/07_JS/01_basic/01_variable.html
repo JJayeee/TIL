@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 변수 */
+        // 기본적으로 상수로 선언, 쓰다보니 재할당해야한다면 그때 let으로 바꾼다. 
+        // ES5(구식): var
+        var number = 1;
+        // ES6+ : 최초 선언시에만 let 키워드를 붙인다.
+        let word = '외않되?';
+        word = '왜 안돼?';
+
+
+        /* 상수: 한 번 할당하면, 재할당 불가 */
+        // 기본적으로 상수로 선언한다. 
+        // 할당 말고 method로 조작하는 것(07_array와 같이)은 아무 문제 없기 때문에 상수로.
+        // ES5: 없음
+        // ES6+
+        const name = 'J';
+        name = '김싸피'; // X, 이러한 재할당이 안 된다는 것. 
+        // consol: Uncaught TypeError: Assignment to constant variable. at 01_variable.html:21
+    </script>
+</body>
+</html>

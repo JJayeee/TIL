@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table - lunch</title>
+  <style>
+    /* Style 정의 1번 방법 */
+    /* HTML 문서 head>style 태그에 정의한다. */
+
+    /* 무엇(tag/elem name)을 - 어떻게({ __; }) */
+    td {
+      /* 어떤 속성을: 어떤 값으로; */
+      border: 1px solid darkblue;
+    }
+
+    th {
+      /* 속성 순서 상관 없 */
+      border: dashed brown 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- html은 속성값 여러개를 줄 때 , 안 쓰고 무조건 띄어쓰기, 사실 이것도 이후 css로 -->
+  a<table syle={border: 1px solid black;>
+    <!-- table row -->
+    <tr>
+      <!-- table header -->
+      <th></th>
+      <th>월</th>
+      <th>화</th>
+      <th>수</th>
+    </tr>
+    <tr>
+      <td>A 코스</td>
+      <!-- 세로 2개: 행 2개를 합친다 -->
+      <td rowspan="2">짬뽕</td>
+      <!-- 가로 2개: 열 2개를 합친다 -->
+      <td colspan="2">초밥</td>
+    </tr>
+    <tr>
+      <td>B 코스</td>
+      <td>김치찌개</td>
+      <td>삼계탕</td>
+    </tr>
+  </table>b
+  <!-- a,b가 어딧는지 inline or block 확인 -->
+  <table border="1px solid darkgray">
+    <!-- tr>th*3 -->
+    <tr>
+      <th>TIME</th>
+      <th>INDOOR</th>
+      <th colspan="2">OUTDOOR</th>
+    </tr>
+    <tr>
+      <!-- html: 구조 + 스타일 정의 -->
+      <!-- 스타일링 방법 3가지: 
+          x. 마크업 안에 inline / 역할 표시에 스타일링 가능하지만 NONO
+          1. head 안에 몰아넣기 - td라는 요소에 특정 style / head는 정보를 모아놓으므로
+        -->
+      <!-- <td style="border: 1px solid darkgray;"></td> -->
+      <td></td>
+      <td>소극장</td>
+      <td>잔디마당</td>
+      <td>대공연장</td>
+    </tr>
+    <tr>
+      <td>10:00</td>
+      <td rowspan="2">안녕하신가영</td>
+      <td></td>
+      <td>10CM</td>
+    </tr>
+    <tr>
+      <td>13:00</td>
+      <td rowspan="2">선우정아</td>
+      <td rowspan="2">참깨와 솜사탕</td>
+    </tr>
+    <tr>
+      <td>15:00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17:00</td>
+      <td>크러쉬</td>
+      <td></td>
+      <td>폴킴</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% comment %} style='width: 18rem; display: inline-block;' {% endcomment %}
+<article class="card mb-3">
+    <a href="{{ posting.get_absolute_url }}">
+        {% if posting.image %}
+            <img src="{{ posting.image.url }}" alt="{{ posting.image }}" class="card-img-top image-fluid">
+        {% else %}
+            <img src="https://picsum.photos/200/300" alt="random image-{{ forloop.counter }}" class="card-img-top image-fluid">
+            {% comment %} random image의 alt값에 대해 for 문의 idx 값을 달아주어 구분 할 수 있게 함 {% endcomment %}
+        {% endif %}
+    </a>
+    <div class="card-body">
+        <i class="{{ posting.icon }} fa-2x"></i>
+        {% comment %} {{ posting.content }} {% endcomment %}
+    </div>
+</article>

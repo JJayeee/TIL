@@ -1,0 +1,12 @@
+{% extends 'classroom/base.html' %}
+{% block title %}학생 정보 입력{% endblock  %}
+
+{% block body %}
+    <div class="alert text-light mt-3" role="alert" style="background-color: #D96941">학생 정보 입력</div>
+    {% comment %} {% include 'classroom/_form.html' %} {% endcomment %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit">
+    </form>
+{% endblock  %}

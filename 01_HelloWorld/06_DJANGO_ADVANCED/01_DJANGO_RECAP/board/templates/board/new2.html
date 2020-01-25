@@ -1,0 +1,10 @@
+{% extends 'board/base.html' %}
+{% block title %}New article{% endblock  %}
+
+{% block body %}
+    <h1>New article</h1>
+    {% include 'board/_form.html' %}
+{% endblock  %}
+
+{% comment %} new와 edit은 jump하는 url이 다르지만, _form이 호출-적용 되므로 결과적으로는 각각의
+링크로 가게 된다. {% endcomment %}

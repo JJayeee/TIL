@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+  <!-- form : 여러개의 input 데이터를 하나로 묶어서 보내기 -->
+  <!-- action="어디로:URL" -->
+  <form action="#">
+    <div>
+      <!-- input 은 inline tag -->
+      <input type="text" value="hi">
+      <!-- 사용자에게는 나타나지 않지만 제출시 value가 보내지는 hidden -->
+      <input type="hidden" value=":)">
+      <input type="number" placeholder="숫자를 입력하세요.">
+      <input type="password">
+      <input type="email">
+      <input type="date">
+      <input type="color">
+      <input type="submit">
+    </div>
+    <div>
+      <!-- checked/기본값, disabled/비활성화 -->
+      <input type="radio" value="Python" name="lang" checked>Python<br>
+      <input type="radio" value="HTML" name="lang">HTML<br>
+      <input type="radio" value="CSS" name="lang">CSS<br>
+      <input type="radio" value="JS" name="lang" disabled>JS<br>
+    </div>
+    <div>
+      <!-- form 안에 하나 더 form st -->
+      <select name="menu">
+        <option value="a">오징어볶음</option>
+        <option value="b" selected>우돈비빔밥</option>
+        <option value="out" disabled>햄버거</option>
+      </select>
+   </div>
+   <div>
+      <!-- 야자는 사람이 보는 것, 넘어가는 것은 value의 값 -->
+      <!-- checkbox는 중복체크 가능 -->
+      <input type="checkbox" name="option" value="overstudy">야자
+      <input type="checkbox" name="option" value="additional">보충
+      <input type="checkbox" name="option" value="weekend">주말
+   </div>
+  </form>
+  <br>
+  <form action="#">  
+    <div>
+      주문서를 작성하여 주십시오<br>
+      이름: <input type="text" placeholder="이름을 입력해주세요"><br>
+      날짜: <input type="text" placeholder="2019. 01. 03."><br>
+    </div>
+    <div>
+      <ol>
+        <li>샌드위치 선택</li>
+        <input type="radio" value="eggmayo" name="lang" checked>에그 마요<br>
+        <input type="radio" value="bmt" name="lang">이탈리안 비엠티<br>
+        <input type="radio" value="avocado" name="lang">터키 베이컨 아보카도<br>
+      <hr>
+        <li>사이즈 선택</li>
+        <input type="number" placeholder="15">
+      <hr>
+        <li>빵</li>
+        <select name="bread">
+          <option value="honey" selected>허니오트</option>
+          <option value="flat" disabled>플랫브래드</option>
+          <option value="italian">하티 이탈리안</option>
+        </select>
+      <hr> 
+        <li>야채/소스</li>
+        <input type="checkbox" name="option" value="tomato">토마토<br>
+        <input type="checkbox" name="option" value="cu">오이<br>
+        <input type="checkbox" name="option" value="ha">할라피뇨<br>
+        <input type="checkbox" name="option" value="hotc">핫 칠리<br>
+        <input type="checkbox" name="option" value="bbq">바베큐<br>
+      </ol>
+    </div>
+  </form>
+</body>
+</html>

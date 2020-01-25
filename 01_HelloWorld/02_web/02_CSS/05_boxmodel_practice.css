@@ -1,0 +1,26 @@
+div.a {
+    background-color: lightgray;
+    /* width height는 content만 */
+    width: 300px;
+    height: 200px;
+    padding: 40px;
+    border: 10px solid navy;
+    margin: 15px;
+    overflow: hidden;
+    /* 넘치는거 잘라버림 */
+}
+/* 
+div.b {
+    font-size: 40px;
+    width: 200px;
+    height: 100px;
+    border: 5px solid red;
+    margin: 10px;
+} */
+
+div.rounded {
+    border-radius: 50px;
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+}

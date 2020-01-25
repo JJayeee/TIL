@@ -1,0 +1,29 @@
+{% extends 'board/base.html' %}
+{% block title %}New article{% endblock  %}
+
+{% block body %}
+    <h1>New article</h1>
+    {% comment %} {% url 'board:new' %} {% endcomment %}
+    {% comment %} new-new이므로, 제자리 이므로 action 없어도 상관 없음 {% endcomment %}
+    <form action="{% url 'board:create' %}" method="POST">
+    {% comment %} HTML 내놔 : GET {% endcomment %}
+    {% comment %} 넘어가는 데이터가 DB에 반영된다: POST {% endcomment %}
+        {% csrf_token %}
+        <div>
+        {% comment %} label + id {% endcomment %}
+            <label for="title">제목:</label>
+            <input type="text" name="title" id="title" value="Hello :)">
+            {% comment %} input 안에 미리 내용 채우기: value {% endcomment %}
+            {% comment %} value는 제출하면 그 값이 그대로 전송 됨 {% endcomment %}
+            {% comment %} textarea는 >여기에< {% endcomment %}
+        </div>
+        <div>
+            <label for="content">내용:</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="제출!">
+        </div>
+    </form>
+
+{% endblock  %}

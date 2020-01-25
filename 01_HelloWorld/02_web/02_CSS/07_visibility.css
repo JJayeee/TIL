@@ -1,0 +1,30 @@
+.visible {
+    visibility: visible; /* default가 있는 이유는 상속시 부모가 inviisible일 경우때매 있음 */
+}
+
+/* 공간까지 있는데 내용이 안 보이는 것 */
+.hidden {
+    visibility: hidden;
+}
+
+/* 화면에서 아예 공간도 갖지 않음 */
+.display-none {
+    /* display 속성이지만, 비교해보자 */
+    display: none;
+}
+
+/* Table 관련 CSS */
+table, td {
+    border: 1px solid black;
+}
+
+
+.collapse {
+/* collapse는 테이블에서만 사용! */
+    visibility: collapse;
+/* 공간 아예 안 차게 하고 싶은데요 => class, none 활용 */
+}
+
+.table-none {
+    display: none;
+}

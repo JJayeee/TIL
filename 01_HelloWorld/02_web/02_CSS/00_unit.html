@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    h1 {
+      font-size: 100%; /* !브라우저!에 기본 px으로 설정되어 있는 것의 50% 상대값!*/
+    }
+
+    p {
+      font-size: 1rem; /* 브라우저 기본 폰트 사이즈 기준 == 1 rem %*/ 
+      color: #000;
+      /* R   G   B */
+      /* range(256) */
+      /* 16진수 0x 두 자리 -> 0f 0f, ff: (16*16) */
+      /* #ffffff = white #000000 = black */
+      /* 중복은 생략가능 #fff #f0f */
+      color: rgba(255, 255, 255, 0);
+      color: rgba(red, green, blue, alpha); /* 투명도 */ 
+    }
+
+    div {
+      font-size: 100%; /* 50%의 경우 8px, 0.5rem */
+    }
+
+    div li {
+      font-size: 2em; /* 상속받은 값(100% = 8px)이 1em */
+    }
+
+    div > div {
+      font-size: 0.8em; /* 상대값 */
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    aaaa
+    <div>
+      bbbb
+      <div>
+        cccc
+        <div>
+          dddd
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>This is my site</h1>
+  <div>
+    <h2>My cafe</h2>
+    <p>This is great cafe</p>
+    <ul>
+      <li>파스타</li>
+      <li>샐러드</li>
+    </ul>
+  </div>
+</body>
+</html>

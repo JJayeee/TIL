@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>{{ article.title }}</h1>
+<p>{{ article.content }}</p>
+<h5>{{ article.like_users.count }}명 좋아합니다.</h5>
+<form action="{% url 'articles:like' article.id %}" method="POST">
+        {% csrf_token %}
+    <button>
+        {% if is_like %}
+        좋아요 취소
+        {% else %}
+        좋아요
+        {% endif %}
+    </button>
+</form>
+
+{% if article.user == request.user %}
+<a href="{% url 'articles:article_update' article.id %}">update</a>
+<form action="{% url 'articles:article_delete' article.id %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value='delete'>   
+</form>
+{% endif %}
+<a href="{% url 'articles:article_list' %}">list</a>
+
+
+<div>
+    <form action="{% url 'articles:comment_create' article.id %}" method="POST">
+        {% csrf_token %}
+        {{ comment_form }}
+        <input type="submit">
+    </form>
+    </div>
+    <div>
+        {% for comment in comments %}
+            <h5>{{ forloop.counter }}: {{ comment.content }}</h5>
+
+            {% if comment.user == request.user %}
+            <form action="{% url 'articles:comment_delete' article.id comment.id %}" method="POST">
+                {% csrf_token %}
+                <input type="submit" value="삭제">
+            </form>
+            {% endif %}
+        {% empty %}
+        '댓글이 없습니다.'
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

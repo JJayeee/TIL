@@ -1,0 +1,41 @@
+    {% comment %} 
+    delete는 DB를 건드는 것 -> POST로 해야 함 
+    지금은 할 수 있는 방법이 form tag 뿐이라 그렇게 구현, 차후에 자바스크립트! 
+    a tag는 검증도 없고, DB데이터를 오픈시켜버릴 수 있음
+
+        <a href="{% url 'board:delete' article.id %}">
+            <button>삭제</button>
+        </a> 
+
+    그런데 아직 url에 delete를 쓰면, get 요청으로 여전히 글이 삭제가 되는 상태
+    -> view함수가 호출만 되면 실행되는 것 -> view의 문제, view를 설정해야 함
+    {% endcomment %}
+
+    <div>
+        <form action="{% url 'board:new_comment' article.id %}", method="POST">
+            {% csrf_token %}
+            {{ comment_form.as_p }}
+            {% comment %} <input type="text" name="comment_content"> {% endcomment %}
+            {% comment %} 원래 'comment_content' 였는데 detail 변경 후 {% endcomment %}
+            <input type="submit">
+        </form>
+    </div>
+
+
+    {% if comments %} <!-- 댓글이 아직 없는 경우도 있으니까, if comment -->
+        <ul>
+            {% for comment in comments %} <!-- comment 마다 -->
+                <li>
+                    {{ comment.content }}  <!-- content를 보이게 한다 -->
+
+                    <!-- 삭제부분 -->
+                    <form method="POST" action="{% url 'board:delete_comment' article.id comment.id %}">
+                        {% csrf_token %}
+                        {% comment %} 순서 맞춰서 id 입력, 넘겨주는 것 {% endcomment %}
+                        <input type="submit" value="[x]">
+                    </form>
+                    <button>수정</button>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}

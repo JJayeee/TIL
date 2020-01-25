@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Start</title>
+</head>
+<body>
+
+    <div id="app"> <!-- 아래 scrip의 코드를 이 div와 합치겠다. -->
+        <h1>{{ message }}</h1> <!-- data.message X, app.data.message X -->
+        <p>{{ count }}</p>
+        <div>
+            <!-- v-on -->
+            <button v-on:click="plus">+</button> <!-- 함수 () 붙여도 되고 안 해도 됨 -->
+            <button v-on:click="minus(3)">-</button>  <!-- 보통 안 쓰는데, 쓸 때는 인자를 넘겨줄 때. -->
+        </div>
+    </div>
+
+    <!-- 도움되는 콘솔 경고를 포함한 개발 버전 // script 순서 주의-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        // initializing 할 때 {}안의 instatnce로 시작한다.
+        const app = new Vue({
+            // el: 어떤 HTML element() | Node 와 Mount(연결/연동)하겠다.
+            el: "#app",
+            // data는 Vue instance 의 시작할 때의 속성 값(=== 숫자, 문자, 배열... object: 수정 될 수 있음)
+            // 렌더링, 출력은 {{ }}를 통해 바로 data의 key로 접근하여 가능
+            // queryselect 하고 inner html 하던 것들이 이미 el로 진행 됨
+            // 또한 이 경우 const가 변할 때 마다(Data가 변할 때 마다) 새로 const를 html에 할당해주어야 함. 
+            // 이러한 것들이 반응형으로 바뀌고, 알아서 DOM에까지 적용 되는 것. (Reactive programming)
+            data: {
+                message: 'Hello, Vue!',
+                count: 0,
+            },
+            // methods: 보통 data를 바꾸는(조작하는) 함수
+            // data가 바뀌면 무조건 re-rendering이 일어남(갱신한 값을 보여주는 일)
+            methods: {
+                // vue instance 안에서는 ()=>{} arrow function 사용 금지
+                plus: function () { this.count++ }, // this 는 알아서 vue가 자기 값(data)을 찾아서 간다
+                minus: function (n) { this.count -= n }, // this가 항상 new Vue.data 를 의미하는 것은 아니다
+            },
+        });
+
+    </script>
+
+</body>
+</html>

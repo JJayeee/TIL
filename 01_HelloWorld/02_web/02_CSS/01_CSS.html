@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS basic</title>
+  <style>
+    /* *는 univalsal HTML ALL */
+    /* selector specificity 에 따라서 CSS가 덮여쓰이는 것, *를 제일 먼저 붓고, h3 붓고, .blue 붓고 */
+    /* 그래서 selecting이 핵심 */
+    /* ((!important)) > inline css > (id: style 목적이 아님) > **class** > **tag** > univ*(0.0.0) > browser 기본 셋팅 */
+  
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: rosybrown;
+    }
+
+    h2 {
+      color: slateblue !important;
+    }
+
+    h3 {
+      color: slateblue;
+    }
+
+    /* class selecting */
+    .blue {
+      color: red;
+    }
+
+    .big {
+      font-size: 100px;
+    }
+
+    /* id selecting */
+    #green {
+      color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="big">Hello, CSS</h1>
+  <h2 id="green" class="blue">Selector</h2>
+  <h3 class="blue big">See how it works</h3>
+</body>
+</html>

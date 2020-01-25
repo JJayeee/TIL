@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ message }}</h1>
+        <p>{{ count }}</p>
+        <div>
+            <button v-on:click="plus">+</button>
+            <button v-on:click="minus(3)">-</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                message: "hello, Vue!",
+                count: 0,
+            },
+            methods: {
+                plus: function () { this.count++ },
+                minus: function (n) { this.count -= n},
+            },
+        })
+
+    </script>
+
+</body>
+</html>

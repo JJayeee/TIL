@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+
+{% block body %}
+    <form method="POST" enctype="multipart/form-data">
+    {% comment %} 여러개 들어갈 수 있도록 enctype {% endcomment %}
+        {% csrf_token %}
+        {% bootstrap_form posting_form %}
+        {% if image_form %}  <!-- create과 update가 form 을 공유하고 있어서 -->
+            {% bootstrap_form image_form show_label=False %}
+        {% endif %}
+        {% buttons %}
+        <button class="btn btn-primary">submit</button>
+        {% endbuttons %}
+    </form>
+
+{% endblock %}

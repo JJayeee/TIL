@@ -1,0 +1,52 @@
+{% extends 'utils/base.html' %}
+{% block title %}Art{% endblock %}
+{% block body %}
+<h1>Asciify</h1>
+<p>Input some text below</p>
+<!-- form tag에 action은 필수! -->
+<!-- action에 url을 뭐라 써야 제대로 찾아 가나 -->
+<form action="/utils/output/" method="GET">
+    <!-- {% csrf_token %} -->
+    <!-- method=POST로 보낼때 위의 것 필수 -->
+
+    <div>
+        <label for="word">text</label>
+        <!-- 없어도 상관은 없는 것이 label -->
+        <!-- for screen reader, label에 있는 내용을 읽어주는 것 -->
+        <!-- bootstrap 있으면 form/components/label에 class="sr-only"를 통함 -->
+        <input id="word" name="user-input" type="text">
+        <!-- required: 꼭 제출하도록 만들기 -->
+        <!-- id는 html 상에서만 적용 -->
+        <!-- django에서 부르기 위해 name을 만들어 주는 것 -->
+    </div>
+
+    <div>
+        <label for="font">font</label><br>
+        {% for font2 in fonts2 %}
+        <input type="radio" value="{{ font2 }}" name="user-font">{{ font2 }}<br>
+        {% endfor %}
+
+        <!-- <input id="font" name="user-font" value="3-d" type="radio">3-d<br>
+            <input id="font" name="user-font" value="3d_diagonal" type="radio">3d_diagonal<br>
+            <input id="font" name="user-font" value="larry3d" type="radio">larry3d<br> -->
+    </div>
+
+    <div>
+        <label for="text">word</label>
+        <input id="text" name="user-input2" type="text">
+    </div>
+
+    <div>
+        <label for="font2">font2</label>
+        <select name="user-font2" id="font2">
+            {% for font in fonts %}
+            <option value="{{ font }}">{{ font }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+</form>
+{% endblock %}

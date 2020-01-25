@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick_lotto</title>
+</head>
+<body>
+    <h1>당신의 행운의 숫자</h1>
+    {{ lucky_numbers }}
+
+    <ul>
+    {% for number in lucky_numbers %}
+        <li>{{ number }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

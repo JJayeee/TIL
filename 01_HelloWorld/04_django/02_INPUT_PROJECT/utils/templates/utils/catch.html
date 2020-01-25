@@ -1,0 +1,38 @@
+{% extends 'utils/base.html' %}
+{% block title %}Catch{% endblock %}
+{% block body %}
+
+<h1>똑똑한 번역기</h1>
+
+<form action="/utils/throw/" method="GET">
+  
+    <div>
+        <input id="word" name="user-words" class="form-control form-control-lg" type="text" placeholder="번역할 한국어">
+    </div>
+
+ 
+    <select class="custom-select" name="user-country" id="country">
+        <option selected>번역할 언어</option>
+        {% for k, v in countries.items %}
+        <option value="{{ v }}/{{ k }}">{{ k }}</option>
+        {% endfor %}
+    </select>
+
+
+    <!-- <div>
+        <label for="country">Country</label>
+        <select name="user-country" id="country">
+            {% for k, v in countries.items %}
+            <option value="{{ v }}">{{ k }}</option>
+            {% endfor %}
+            {{ k }}-{{ v }} -->
+        <!-- </select>
+    </div> --> 
+    <br>
+
+    <div>
+        <button type="submit" class="btn btn-primary">얍!</button>
+    </div>
+
+</form>
+{% endblock %}

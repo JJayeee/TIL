@@ -1,0 +1,10 @@
+<nav>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="{% url 'sns:posting_list' %}" class="nav-link {% block list %}{% endblock %}">SNS</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link disabled {% block detail %}{% endblock %}" aria-disabled="True">Detail</a>
+    </li>
+  </ul>
+</nav>

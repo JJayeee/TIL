@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my">
+
+    </div>
+    <!-- onclick은 좋은 방법은 아님. 마치 style 처럼. 문서 구조에 행동이 들어가는 것은 옳지 않음. script로 -->
+    <button id="js-button">Click Me</button>  <!-- id 는 JS 거! -->
+    <button>Me too</button>
+    <button>Hi</button>
+    <script>
+        // 문제 있음 ㅠ.ㅠ lab 확인하기!!
+
+        // Event Listener
+        /*
+            [무엇] 을   [언제]                    [어떻게] 한다.
+             버튼        클릭                     화면에 나타낸다.
+             button      addEventListner('click', yap)
+            
+             [무엇].addEventListener([언제],[어떻게])
+        */
+
+        // 무엇
+        const button = document.querySelector('#js-button');  // button#js-button
+
+        // 어떻게
+        function showInScreen() {
+            const area = document.querySelector('#my');  // div#my
+            area.innerHTML = `<h1>얍!</h1>`;  // 영역에 넣겠다.
+        }
+
+        // 언제
+        button.addEventListener('click', showInScreen) // 클릭이 일어나면 + 어떻게: yap
+
+    
+    </script>
+</body>
+</html>

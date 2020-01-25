@@ -1,0 +1,46 @@
+﻿1. App
+  1. accounts
+  2. articles
+2. Model
+  1. 기본 제공 User(auth.User)
+  2. Article
+  3. Comment
+3. Table
+  1. User 저장 테이블
+  2. Article 저장 테이블
+  3. Comment 저장 테이블
+  4. '좋아요' 를 저장할 테이블
+4. View
+  1. signup / login / logout
+  2. Article CRUD (CUD 는 login 필요)
+  3. Comment CRD (CD 는 login 필요)
+  4. like
+5. Template
+  1. Login 한 User 에게 다른 HTML(상단바 Login/Logout 및 기타 등등)
+
+
+source ./venv/Scripts/activate
+
+from django.contrib.auth import get_user_model
+User = get_user_model()
+
+request.user.is_authenticated
+
+user = form.get_user()
+
+
+if article.user != request.user:
+    return redirect('articles:article_list')
+
+login 인자 2개
+auth_login(request, user)
+logout 인자 1개
+auth_logout(request)
+
+# User 확장 안 씀
+# 1. auth.User 는 자동으로 준비되어 있음.
+# 2. form도 마찬가지
+# 3. migrate만 해주면 된다.
+
+
+

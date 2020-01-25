@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<body>
+  <div>
+    <!-- heading -->
+    <h1>heading1</h1>
+    <h2>heading2</h2>
+    <h3>heading3</h3>
+    <h4>heading4</h4>
+    <h5>heading5</h5>
+    <h6>heading6</h6>
+  </div>
+
+  <div>
+    <!-- 과거에 썼으나, 
+          현재는 대체 된 요소들 -->
+    hi, <b>This is bold</b>
+    nope, <strong>This is correct</strong>
+
+    this is <i>italic</i>
+    nope, <em>This is right</em>
+  </div>
+
+  <div>
+    This is <mark>mark</mark>
+    This is <del>deleted</del>
+    This is <ins>inserted</ins>
+  </div>
+
+  <!-- paragraph tag -->
+  <p>
+    this is p tag.
+    this is p tag.<br>
+    <!-- br도 필요한 순간에만 쓰는 것, 이거로 문장 간격 조정하지 않기 -->
+    this is p tag.
+    this is p tag.
+  </p>
+  <p>
+    And this is p too.
+    And this is p too.
+    And this is p too.
+    And this is p too.
+  </p>
+
+  <!-- 그냥 선 긋기라기보단 씬의 변경같은 맥락임 -->
+  <hr>
+
+  <!-- 내가 입력한 그대로 보여달라 / indent(사람보기좋으라고 하는 것)도 그대로 출력함 -->
+  <!-- pre: Preformatted Text, 원래 enter, tab, space는 무조건 공백 하나로 인식하는데 -->
+  <!-- pre 쓰면 html 형태 그대로를 유지한다. -->
+  <pre>
+    import random
+    x = random.choice([1, 2, 3, 4])
+    print(x)
+  </pre>
+
+  <!-- 인용구, 인용블럭 -->
+  <p>
+    점심에 관한 명언. <q>오늘의 점심은 a 와 b 다.</q>
+  </p>
+  <blockquote>
+    인생은 b와 d 사이의 c 다.
+  </blockquote>
+
+  <!-- 리스트 만들기 -->
+  <ul>
+    <li>오전 할 일</li>
+      <ol>
+        <li>입실 누르기</li>
+        <li>커피 셋팅</li>
+        <li>복습</li>
+      </ol>
+    <li>점심 할 일</li>
+    <li>저녁 할 일</li>
+  </ul>
+
+  <ol>
+    <li>20층 올라간다</li>
+    <li>식판을 챙긴다</li>
+    <li>밥을 먹는다</li>
+  </ol>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="06_display.css">
+</head>
+<body>
+
+    <!-- block -->
+    <div class="aa">
+        <h2>Block level</h2>
+        <p>
+            width, height 미지정의 경우 => width: 100%(px 아님); height: auto;
+        </p>
+    </div>
+    <div class="bb">
+        <h2>Block level</h2>
+        <a href="#">This is inline</a>
+        <!-- 위아래가 블럭이라 a tag가 떨어져 있음 -->
+        <p>
+            width 300px 지정 => width; height: auto;
+        </p>
+    </div>
+
+    <hr>
+    <!-- inline -->
+    <!-- inline 안에 특정 애를 class 주고 건들고 싶을 때 span -->
+    <h1>My <span class="emphasized">great</span> heading</h1>
+    <span class="cc">Inline</span>
+    <span class="cc">Inline <!-- <div>??</div> --> </span> <span class="cc">Inline</span>
+    <!-- inline 요소 안에는 space 하나도 유의미함           ^ 여기  -->
+
+    <div class="xx">
+        <span class="big-lh">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum deleniti, ipsa nesciunt dolorum, quibusdam at sint quae, nemo mollitia ad praesentium recusandae ipsam dolore minus assumenda culpa hic fuga eaque.
+        </span>
+    </div>
+    
+    <hr>
+    <!-- inline blook -->
+    <p class="id">p는 원래 블록</p>
+    <p class="id">하지만 짜잔!</p>
+
+
+</body>
+</html>

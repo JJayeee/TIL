@@ -1,0 +1,53 @@
+.size-40 { font-size: 40px; }
+.size-2x { font-size: 2.0em; }
+.size-150p { font-size: 150%; }
+.size-large { font-size: xx-large; }
+/* 보통 em 단위로 움직인다. */
+
+/* 우선순위: Times~, 만약 이게 없으면 다음 것 */
+/* 그래서 마지막은 어디 컴에나 있는 폰트를 써 둠 */
+/* 띄어쓰기 있으면 "" 아님 상관 없음 */
+.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.monospace {
+    font-family: consolas, Courier, monospace;
+}
+/* cf. monospace - 고정폭 글꼴 */
+ 
+/* <i>, <b> 이런거 하지 말고 */
+.italic {
+    /* normal, italic, oblique */
+    font-style: italic;
+}
+
+.weight {
+    font-weight: 10;
+}
+
+/* line height는 행간, 아래는 자간 */
+.loose {
+    letter-spacing: 5px;
+}
+
+h1 { text-align: center; }
+h2 { text-align: right; }
+p.left { text-align: left; }
+p.justify { text-align: justify; }
+
+p.center { text-align: center; }
+
+a { text-align: center; }
+/* a는 inline요소. text-aling: center 해도 변하지 않음
+inline요소는 정렬 할 수 없음 그래서 박스에 넣어서 부모 기준으로 움직이도록 조정 */
+
+/* img tag도 inline */
+div.center-image {
+    /* display: block; */
+    text-align: center;
+}
+/* text-align 안 먹음 */
+

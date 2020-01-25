@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check_int</title>
+</head>
+<body>
+    <h1>
+        {{ num }}은 {% if is_even %} 짝수 {% else %} 홀수 {% endif %}입니다.
+
+    </h1>
+
+    <!-- \{% %\} 는 논리 표현 -->
+    {% if is_even %}
+        <h1>{{ num }}은 짝수입니다.</h1>
+    {% else %}
+        <h1>{{ num }}은 홀수입니다.</h1>
+    {% endif %}
+    <!-- html은 tap 구분이 없어서 if문 끝나는 지점을 써줌 -->
+</body>
+</html>
