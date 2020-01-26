@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookie Master</title>
+</head>
+<body style="background: darkseagreen">
+
+    <section>
+        <button onclick="getTimestamp()">Timestamp</button>
+        <button onclick="getTimestampFetch()">Timestamp fetch</button>
+    </section>
+</body>
+<script>
+    const apiUri = 'http://localhost:10001/timestamp';
+
+    const getTimestamp = () => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', apiUri, true);
+      xhr.setRequestHeader('Content-Type', 'application/json;');
+      xhr.withCredentials = true;
+      xhr.onreadystatechange = () => {
+        console.log(xhr.response);
+      };
+      xhr.send(null);
+    };
+
+    const getTimestampFetch = () => {
+      fetch(apiUri, {
+        method : 'GET',
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8'
+        },
+        credentials: 'include',
+      })
+        .then(res => res.json())
+        .then(result => console.log(result));
+    };
+</script>
+</html>
