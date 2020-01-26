@@ -20,7 +20,7 @@
 ## 02. NodeJS
 
 - 2020.01.01 ~
-- `Node.js 교과서` 내용을 실습 및 정리한 폴더입니다. 
+- `Node.js 교과서` 및 `구글링`을  통해 학습합니다.
 - 실습 환경: Node.js v12.13.0. npm 6.13.4. MySQL 8.0.18. MongoDB 4.2.2.
 
 
@@ -36,9 +36,7 @@
 | 07_Mongoose       | MongoDB, Mongoose, populate                                  |
 | 08_NodeBird       | Express Project: login, hashtag, user follow, search, image upload |
 | 09_Authentication | API Server, JWT, OAuth 2.0                                   |
-| 10_Cookie         | cookie, domain, CORS                                         |
-
-
+| 10_Cookie*        | cookie, domain, CORS                                         |
 
 
 
@@ -46,6 +44,9 @@
 
 ----
 
-**reference**
+**references**
 
-- 조현영, 2018, `Node.js 교과서`, 서울: 길벗 
+- 01~09: 조현영, 2018, `Node.js 교과서`, 서울: 길벗 
+- 10: `예제로 보는 쿠키와 도메인의 관계` 
+  - http://blog.naver.com/PostView.nhn?blogId=gomland&logNo=221492821285&categoryNo=1&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
+

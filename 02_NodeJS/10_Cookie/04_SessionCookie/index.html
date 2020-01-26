@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookie Master</title>
+</head>
+<body style="background: aqua">
+
+    <section>
+        <button onclick="request(authUri)">Auth</button>
+        <button onclick="request(infoUri)">Get User Info</button>
+        <button onclick="request(logoutUri)">Logout</button>
+    </section>
+</body>
+<script>
+    const authUri = 'http://localhost:10001/auth?id=jay&pw=1234';
+    const infoUri = 'http://localhost:10001/info';
+    const logoutUri = 'http://localhost:10001/logout';
+
+
+    const request = (uri) => {
+      fetch(uri, {
+        method : 'GET',
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8'
+        },
+        credentials: 'include',
+      })
+        .then(res => res.json())
+        .then(result => console.log(result));
+    };
+</script>
+</html>
