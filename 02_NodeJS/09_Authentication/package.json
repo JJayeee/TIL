@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^3.0.7",
-    "chanucli": "^1.1.1",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.2.0",
