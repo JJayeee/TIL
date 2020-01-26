@@ -28,14 +28,15 @@
 | Index             | Keyword                                                      |
 | ----------------- | ------------------------------------------------------------ |
 | 01_JavaScript     | ES6+                                                         |
-| 02_NodeJS         | node object/module, fs, sync/async, buffer/stream, error     |
-| 03_HttpServer     | http, cookie/session, REST API                               |
-| 04_Npm            | npm, package publish                                         |
+| 02_NodeJS         | Node object/module, fs, sync/async, buffer/stream, error     |
+| 03_HttpServer     | http, cookie/session(basic), REST API                        |
+| 04_Npm            | NPM, Package publish                                         |
 | 05_Express        | Express-generator, Pug(Jade)                                 |
 | 06_Sequelize      | MySQL, JOIN, Sequelize                                       |
 | 07_Mongoose       | MongoDB, Mongoose, populate                                  |
 | 08_NodeBird       | Express Project: login, hashtag, user follow, search, image upload |
 | 09_Authentication | API Server, JWT, OAuth 2.0                                   |
+| 10_Cookie         | cookie, domain, CORS                                         |
 
 
 
