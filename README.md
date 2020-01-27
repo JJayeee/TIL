@@ -15,7 +15,7 @@
 
 
 
-
+​	
 
 ## 02. NodeJS
 
@@ -36,7 +36,8 @@
 | 07_Mongoose       | MongoDB, Mongoose, populate                                  |
 | 08_NodeBird       | Express Project: login, hashtag, user follow, search, image upload |
 | 09_Authentication | API Server, JWT, OAuth 2.0                                   |
-| 10_Cookie*        | cookie, domain, CORS                                         |
+| 10_Cookie         | cookie, domain, CORS                                         |
+| 11_Routes         | routes and routers, controllers, Swagger                     |
 
 
 
@@ -47,6 +48,11 @@
 **references**
 
 - 01~09: 조현영, 2018, `Node.js 교과서`, 서울: 길벗 
-- 10: `예제로 보는 쿠키와 도메인의 관계` 
-  - http://blog.naver.com/PostView.nhn?blogId=gomland&logNo=221492821285&categoryNo=1&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
+- 10_Cookie
+  - gomland | `예제로 보는 쿠키와 도메인의 관계`  http://blog.naver.com/PostView.nhn?blogId=gomland&logNo=221492821285&categoryNo=1&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
 
+- 11_Routes 
+  - `express 공식 문서` http://expressjs.com/ko/guide/routing.html
+  - `swagger-jsdoc 공식 문서` https://github.com/Surnet/swagger-jsdoc
+  - `swagger editor` http://editor.swagger.io/
+  - gongzza | `express에 swagger 붙이기` https://gongzza.github.io/javascript/nodejs/swagger-node-express/
