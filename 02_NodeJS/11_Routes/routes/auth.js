@@ -1,15 +1,15 @@
+const express = require('express');
+const router = express.Router({mergeParams: true});
+
 const controller = require('../controllers/auth');
 const { isNotLoggedIn } = require('./utils');
 
-module.exports = (router) => {
-  router.route('/signup')
-    .post(isNotLoggedIn, controller.signup);
 
-  router.route('/login')
-    .post(isNotLoggedIn, controller.login);
+router.post('/signup', isNotLoggedIn, controller.signup);
 
-  router.route('/logout')
-    .get(controller.logout);
+router.post('/login', isNotLoggedIn, controller.login);
 
-  return router;
-};
+router.get('/logout', controller.logout);
+
+
+module.exports = router;
