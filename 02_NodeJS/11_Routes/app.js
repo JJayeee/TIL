@@ -23,11 +23,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
-const swagger = require('./routes/swagger');
-const auth = require('./routes/auth');
+const swaggerRouter = require('./routes/swagger');
+const authRouter = require('./routes/auth');
 
-app.use(swagger);
-app.use('/auth', auth(router));
+app.use('/swagger', swaggerRouter);
+app.use('/auth', authRouter);
 
 
 app.use((req, res, next) => {
