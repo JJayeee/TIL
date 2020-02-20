@@ -47,7 +47,7 @@
 
 **references**
 
-- 01~09: 조현영, 2018, `Node.js 교과서`, 서울: 길벗 
+- 01~08: 조현영, 2018, `Node.js 교과서`, 서울: 길벗 
 - 10_Cookie
   - gomland | `예제로 보는 쿠키와 도메인의 관계`  http://blog.naver.com/PostView.nhn?blogId=gomland&logNo=221492821285&categoryNo=1&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView
 
