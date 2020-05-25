@@ -41,6 +41,24 @@
 
 
 
+## 03. TensorFlow
+
+
+
+
+
+## 04. Deploy
+
+- 배포하면서 겪은 시행착오 정리
+- Ubuntu 명령어 정리
+- Keywords
+  - AWS EC2, Load Balancer, Certificated Manager
+  - SSL, DNS 
+  - Django, Vue.js, MySQL
+  - WAS, Nginx
+
+
+
 
 
 ----
