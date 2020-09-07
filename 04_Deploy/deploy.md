@@ -192,7 +192,7 @@
 - HTTPS 에서 HTTP 로 요청을 보내면 에러가 난다.
     - [혼합 콘텐츠 방지](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content?hl=ko)
 
-        ![error.png](.\images\error.png)
+        ![error.png](./images/error.png)
 
 
 
@@ -240,6 +240,6 @@ $ nginx -s quit
     - [HTTP 503: 서비스 사용 불가](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html)
     - [Availability Zones for Your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-subnets.html)
 
-    ![503error.png](.\images\503error.png)
+    ![503error.png](./images/503error.png)
 
 
