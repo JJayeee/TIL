@@ -20,7 +20,7 @@
 ## 02. NodeJS
 
 - 2020.01
-- `Node.js 교과서` 및 `구글링`을  통해 학습합니다.
+- `Node.js 교과서`(조현영, 2018) 및 `구글링`을  통해 학습합니다.
 - 실습 환경: Node.js v12.13.0. npm 6.13.4. MySQL 8.0.18. MongoDB 4.2.2.
 
 
@@ -38,6 +38,15 @@
 | 09_Authentication | API Server, JWT, OAuth 2.0                                   |
 | 10_Cookie         | cookie, domain, CORS                                         |
 | 11_Routes         | routes and routers, controllers, Swagger                     |
+
+- reference
+
+  - [`예제로 보는 쿠키와 도메인의 관계`](http://blog.naver.com/PostView.nhn?blogId=gomland&logNo=221492821285&categoryNo=1&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
+
+  - [`express 공식 문서`](http://expressjs.com/ko/guide/routing.html)
+  - [`swagger-jsdoc 공식 문서`](https://github.com/Surnet/swagger-jsdoc)
+  - [`swagger editor`](http://editor.swagger.io/)
+  - [`express에 swagger 붙이기`](https://gongzza.github.io/javascript/nodejs/swagger-node-express/)
 
 
 
@@ -71,21 +80,4 @@
 - Git 관련한 경험을 문서로 정리합니다.
   - Git LFS 
 
-
-
-
-
-----
-
-**references**
-
-- 01~08: 조현영, 2018, `Node.js 교과서`, 서울: 길벗 
-- 10_Cookie
-  - gomland | [`예제로 보는 쿠키와 도메인의 관계`](http://blog.naver.com/PostView.nhn?blogId=gomland&logNo=221492821285&categoryNo=1&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
-
-- 11_Routes 
-  - [`express 공식 문서`](http://expressjs.com/ko/guide/routing.html)
-  - [`swagger-jsdoc 공식 문서`](https://github.com/Surnet/swagger-jsdoc)
-  - [`swagger editor`](http://editor.swagger.io/)
-  - gongzza |[`express에 swagger 붙이기`](https://gongzza.github.io/javascript/nodejs/swagger-node-express/)
 
