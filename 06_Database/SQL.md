@@ -74,7 +74,7 @@ SELECT ANIMAL_ID, NAME, DATETIME FROM ANIMAL_INS ORDER BY NAME, DATETIME DESC;
 select id, username from wouldyouci.accounts_user order by id asc limit 10;
 ```
 
-![07](C:\Users\multicampus\Desktop\images\07.PNG)
+![07](./images/07.PNG)
 
 
 
@@ -82,7 +82,7 @@ select id, username from wouldyouci.accounts_user order by id asc limit 10;
 select id, username from wouldyouci.accounts_user order by id desc limit 10;
 ```
 
-![08](C:\Users\multicampus\Desktop\images\08.PNG)
+![08](./images/08.PNG)
 
 
 
@@ -156,7 +156,7 @@ select count(distinct is_admin) from wouldyouci.accounts_user;
 SELECT * FROM wouldyouci.movies_movie_genres group by genre_id;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\09.PNG" alt="09" style="zoom: 80%;" />
+<img src="./images/09.PNG" alt="09" style="zoom: 80%;" />
 
 
 
@@ -164,7 +164,7 @@ SELECT * FROM wouldyouci.movies_movie_genres group by genre_id;
 SELECT *, count(genre_id) FROM wouldyouci.movies_movie_genres group by genre_id with rollup;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\10.PNG" alt="10" style="zoom:80%;" />
+<img src="./images/10.PNG" alt="10" style="zoom:80%;" />
 
 
 
@@ -177,7 +177,7 @@ group by watch_grade with rollup
 order by score;
 ```
 
-![11](C:\Users\multicampus\Desktop\images\11.PNG)
+![11](./images/11.PNG)
 
 
 
@@ -191,7 +191,7 @@ select watch_grade from wouldyouci.movies_movie group by watch_grade;
 select distinct watch_grade from wouldyouci.movies_movie;
 ```
 
-![12](C:\Users\multicampus\Desktop\images\12.PNG)
+![12](./images/12.PNG)
 
 ```sql
 SELECT user_id, count(user_id) FROM wouldyouci.accounts_rating group by user_id;
@@ -407,11 +407,11 @@ select id, name, score from wouldyouci.movies_movie where score in (3.1, 3.2);
 
 - 원하는 결과가 아님. 조회를 한 다음 정렬을 하고 싶다!
 
-<img src="C:\Users\multicampus\Desktop\images\14.PNG" alt="14" style="zoom:80%;" />
+<img src="./images/14.PNG" alt="14" style="zoom:80%;" />
 
 - 문법 오류
 
-  <img src="C:\Users\multicampus\Desktop\images\15.PNG" alt="15" style="zoom:80%;" />
+  <img src="./images/15.PNG" alt="15" style="zoom:80%;" />
 
 
 
@@ -431,7 +431,7 @@ select * from
 order by t.score;
 ```
 
-![13](C:\Users\multicampus\Desktop\images\13.PNG)
+![13](./images/13.PNG)
 
 
 
@@ -471,7 +471,7 @@ order by 'new score'
 limit 20 offset 200;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\17.PNG" alt="17" style="zoom:80%;" />
+<img src="./images/17.PNG" alt="17" style="zoom:80%;" />
 
 - error
 
@@ -518,7 +518,7 @@ order by new score
 limit 20 offset 200;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\16.PNG" alt="16" style="zoom:80%;" />
+<img src="./images/16.PNG" alt="16" style="zoom:80%;" />
 
 
 
@@ -541,7 +541,7 @@ select name, score, floor(score), ceil(score), round(score, 1)
 from wouldyouci.movies_movie;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\18.PNG" alt="18" style="zoom:80%;" />
+<img src="./images/18.PNG" alt="18" style="zoom:80%;" />
 
 
 
@@ -561,7 +561,7 @@ from wouldyouci.movies_movie;
 select name, concat('영화 명은 ', name) from wouldyouci.movies_movie limit 10;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\19.PNG" alt="19" style="zoom:80%;" />
+<img src="./images/19.PNG" alt="19" style="zoom:80%;" />
 
 
 
@@ -582,7 +582,7 @@ from wouldyouci.movies_movie
 limit 10;
 ```
 
-<img src="C:\Users\multicampus\Desktop\images\20.PNG" alt="20" style="zoom:80%;" />
+<img src="./images/20.PNG" alt="20" style="zoom:80%;" />
 
 
 
